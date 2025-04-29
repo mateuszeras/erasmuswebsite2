@@ -1,0 +1,551 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <style>
+
+    button{
+		background-color: 08325A;
+		 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 20px;
+	 border: none;
+	}
+	#project{
+		border: solid;
+		border-radius: 4px;
+		font-size: 20px;
+		width: 80vw;
+	}
+	button:hover{
+		background-color: 062645;
+	}
+	.menudiv{
+		height: 109px; /* Pozwala na elastyczną wysokość */
+    width: 99vw; /* Pełna szerokość */
+    background-color: #08325A; /* Kolor tła */
+    display: flex;
+    align-items: center; /* Wyrównanie pionowe */
+    justify-content: space-between; /* Przestrzeń między elementami */
+    padding: 10px; /* Margines wewnętrzny */
+    box-sizing: border-box; 
+		 
+		}
+		
+	.logotekst{
+	 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 50px;
+	 margin: 20px;
+	}
+	.space{
+		flex-grow: 1;
+	}
+	.menu{
+		display: none; 
+		font-family: sans-serif;
+		width: 97.48vw;
+		margin-top: 65px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: absolute;
+            top: 50px; /* Adjust as needed */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+			font-size: 0.1m;
+			padding: 9px;
+		background-color: 08325A;
+		border: none;
+	}
+
+	a{
+		margin: 19px;
+		color: white;
+		
+	}
+	img{
+	margin-top: 19px;
+	 height: 50px;
+	}
+	.slogan{
+	  width: 700px;
+	  height: auto;
+	}
+	.erasmusimg{
+		height: 350px;
+		width: auto;
+		margin-left: 12px;
+        border: solid;
+	}
+	.tekstindiv{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		color: 515151;
+		width: 400px;
+				margin-top:129px;
+	}
+	.tekstindivs{
+		padding: 4px;
+		margin: 9px;
+		font-size: 20px;
+		color: 515151;
+		width: 400px;
+	}
+	.tekstindiv2{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		color: 515151;
+				margin-top:129px;
+	}
+	.erasmusimg1{
+		height: 350px;
+		width: auto;
+		margin-left: 29px;
+		border: solid;
+
+	}
+	.erasmusimg2{
+		height: 290px;
+		width: auto;
+		margin-left: 79px;
+        border: solid;
+	}
+	.erasmusimg3{
+		height: 280px;
+		width: auto;
+		margin-left: 29px;
+		border: solid;
+
+	}
+	.erasmusimg44{
+		height: 350px;
+		width: auto;
+		margin: 9px;
+		border: solid;
+
+	}
+	.backgrounder {
+		background-color: #F7F7F7;
+		min-height: 100vh;
+	}
+	
+	.tekstindiv1{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		width: 79%;
+		color: 515151;
+		margin-top:29px;
+	}
+	.tekstindiv2{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		width: 59%;
+		color: 515151;
+		margin-top:29px;
+		font-family: cursive;
+	}
+	.alldivs{
+	   display: flex;
+	   width: 100%;
+	   height: auto;
+	}
+	.specialdivs{
+	   
+	   width: 100%;
+	   height: auto;
+	}
+	*{
+	  font-family: Verdana ;
+	}
+	.tekster{
+	   font-size: 0.9999cm;
+	   color:08325A;
+	}
+	.survey{
+	   font-size: 0.9999cm;
+	   color:08325A;
+	}
+	.images{
+	  display: table;
+	  height: 400px;
+	}
+
+	.table{
+		display: flex;
+		font-family: cursive;
+		
+	}
+	.finishtable{
+		margin-left: 90px;
+		min-width: 70%;
+		font-family: cursive;
+	}
+	.germantable{
+		min-width: 70%;
+		font-family: cursive;
+	}
+	.seperate{
+		width: 100px;
+		background-color: black;
+		height: 100px;
+		margin: 9px;
+	}
+	.tekstindiv44{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		width: 59%;
+		color: 515151;
+		margin-top:29px;
+	}
+	.source{
+		text-decoration: none;
+
+	}
+	@media (max-width: 700px) {
+		.menudiv {
+			width: 100%;
+		}
+		.slogan{
+			width: 72vw;
+		}
+		.logotekst{
+			font-size: 20px;
+		}
+		h2{
+			font-size: 12px;
+		}
+		.logoimag{
+			width: 50px;
+			height: 29px;
+			margin-bottom: 9px;
+		}
+        .erasmusimg3{
+			height: 120px;
+			margin-left: 1vw;
+			width: auto;
+		}
+		.tekstindiv1{
+			font-size: 9px;
+		}
+		.images{
+			height: 180px;
+		}
+		.survey{
+			font-size: 22px;
+		}
+		.erasmusimg{
+			height: 212px;
+		}
+		.tekstindivs{
+			font-size: 8px;
+			max-width: 70vw;
+		}
+		.tekstindiv44{
+			font-size: 14px;
+		}
+		.erasmusimg44{
+			height: 182.22px;
+			margin-left: 4px;
+		}
+		.erasmusimg1{
+			height: 212px;
+		}
+		.erasmusimg2{
+			height: 212px;
+			margin-left: 4px;
+		}
+		.table{
+			display: block;
+		}
+		.seperate{
+			height: 0px;
+			width: 0px;
+		}
+		.source{
+			font-size: 12px;	
+		}
+		.germantable{
+			width: 342px;
+			height: auto;
+		}
+		.finishtable{
+			width: 342px;
+			height: auto;
+			margin-left: 0px;
+			margin-top: 52px;
+		}
+		#project{
+			width: 80vw;
+		}
+		#projecttitle{
+			font-size: 20px;
+		}
+        
+	}
+
+ </style>
+ <style>
+    .footer{
+		display: flex;
+		margin-top: 80vh;
+		width: 100vw;
+		height: 8vw;
+		background-color: #08325A;
+		align-items: center; /* Centers vertically */
+
+	}
+	.menudivs{
+		background-color: #08325A;
+		width: 100vw;
+		height: 100.2px;
+		position: fixed;
+    top: 0;
+	display: flex;
+    left: 0;
+	}
+	.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+		font-size: auto;
+	}
+	.logoimag1{
+		margin-left: 1vw;
+		margin-top: 25px;
+		height: 40px;
+	}
+	.space1{
+		width: 65.2vw;
+	}
+	.menubutn1{
+		margin-left: 100px;
+		
+	}
+	.menu1{
+		display: none; 
+		font-family: sans-serif;
+		width: 97.48vw;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: fixed;
+            top: 100.2px; /* Adjust as needed */
+			font-size: 0.1m;
+			padding: 9px;
+			left: 0;
+		background-color: 08325A;
+		border: none;
+	}
+	.source1{
+		text-decoration: none;
+	}
+	@media (max-width: 700px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		.logoimag1{
+			height: 22px;
+			margin-top: 42px;
+		}
+		.space1{
+			width: 25.2vw;
+		}
+	}
+ </style>
+</head>
+<body>
+<div class="menudivs">
+	<h1 class="logotekst1">Erasmus+</h1>
+	<img class="logoimag1" src="logo.png">
+	<div class="space1"></div>
+	<button id="menubutn1" onclick="Menu()">Menu</button>
+</div>
+<center>
+	<div class="menu1" id="menu">
+		<center>
+		   <a href="index.html" class="source1">Homepage</a>
+	   <br>
+	   <br>
+	   <a href="whatiserasmus.html" class="source1">What is Erasmus</a>
+	   <br>
+	   <br>
+	   <a href="application.html" class="source1">application</a> 
+	   <br>
+	   <br>
+	   <a href="partnerschools.html" class="source1">partner schools</a>
+		</center>
+	   
+   </div>
+</center>
+
+
+	<center>
+		<div style="height: 100px;"></div>
+		<h1 >HOMEPAGE</h1>
+	<img src="slogan.png" class="slogan">
+	</center>
+		<div class="backgrounder">
+		<br>
+	<div id="project" class="projectbutton" onclick="changeSize()">
+			<h2 style="margin-left: 9px;" id="projecttitle">Project "Not without my phone" +</h2>
+			
+	</div>
+	<div id="projectcontent"></div>
+	<script>
+		document.getElementById("projectcontent").innerHTML = "";
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+		function changeSize(){
+			const backgrounder = document.querySelector('.backgrounder');
+			backgrounder.style.height = `${window.height}px`;
+			let a = document.getElementById("projectcontent").innerHTML;
+			if(a == ""){
+				document.getElementById("projecttitle").innerText = 'Project "Not without my phone" -';
+				Larger()
+			}
+			else{
+				document.getElementById("projectcontent").innerHTML = "";
+				document.getElementById("projecttitle").innerText = 'Project "Not without my phone" +';
+			}
+		}
+        function Larger(){
+			document.getElementById("projectcontent").innerHTML = `
+	<h2>We made a survey in our school about the use of smartphones, here you can see our results:</h2>
+	<div class="alldivs">
+	 <h6 class="tekstindiv1">
+	<div class="images">
+	<img class="erasmusimg3" src="whatisyourage.jfif">
+		<img class="erasmusimg3" src="gender.jfif">
+		</div>
+
+		 We asked the responders' age and the most common age was 15. All of the responders were in the age of 12 to 18.
+We also asked their gender. The genders of the students are almost 50-50, there might be a mistake in the system, because all the students didn't respond. But there was little more boys.
+		  </h6>
+		  
+	
+	 
+	</div>
+	
+
+	<br>
+	<br>
+	<h2 class="survey">Surveys</h2>
+	<h2>What's the best age for getting a phone?</h2>
+	<div class="specialdivs">
+		<img class="erasmusimg" src="agetogetsmartphone.jfif">
+		<br>
+	     <h6 class="tekstindivs">
+	        Most people think that the best age to get a smartphone is form 10 to 13 years. The minimum of age is 6 years and the maximum of age is 18 years.
+
+	</h6>
+	
+	
+	</div>
+	<h2>How do you feel without your smartphone?</h2>
+	<div class="specialdivs">
+	     <h6 class="tekstindiv44">
+	       Here you can see the answers for the question: "How do you feel without your phone?".
+	    </h6>
+	    <br>
+	     <img class="erasmusimg1" src="feelwithoutphone.jfif">
+		 <div style="height:100px"></div>
+	</div>
+	<h2>How many hours do you spend on your phone?</h2>
+	<div class="alldivs">
+	     <h6 class="tekstindiv1">
+		 <div class="images">
+		 <img class="erasmusimg44" src="howmanyhoursdo.jfif">
+	     <img class="erasmusimg44" src="phoneaddition.jfif">
+		 
+		 </div>
+		 <br>
+	        
+		 </h6>
+	
+	</div>
+	<h2>Where do you put your phone at night?</h2>
+	<div class="alldivs">
+	     
+	<img class="erasmusimg2" src="whereputyourphone.jfif">
+	</div> 
+	<br>
+	<br>
+	<h2>Here are some inpressions about the week we spent together:</h2>
+	<h6 class="tekstindiv2">
+	<br>
+
+	<div class="table">
+		<div class="germantable">
+			German student
+<br>
+<br>
+First, we played a game of bingo to get to know each other.
+
+What is bingo actually?
+
+For us, bingo is an exchange of information, something we play in class after a vacatcion to find out what the others have been up to. Afterwards we did a tour of the school. Quite normal for us, right? But the Finns seemed very enthusiastic and interested. After the tour we had an introduction to our project. The different interests became clear there. We were divided into two groups. The first group dealt with the design of the website, the other group dealt with the content of the website. At the end of the school day, we cooked potato salad and meatballs together. Something traditionally german.
+
+We are looking forward to a great day together.
+Today at school we invited an expert for journalism: Petra. For the first period we discussed about what to fill out website with and how to make it interesting. Do you know how to write a catchy blog entry? We do now! It should start with an appealing beginning. Throughout the blog it should be like a conversation, a little interaction with the reader. Later we came up with 6 questions about phone using for our survey and split up into groups for tomorrow. How many hours do you spent on your phone everyday?
+In the last period we went in an actionbound tour through Potsdam prepared by Milena and Linnea. After 6km and two hours we have seen about 6 of the most famous sights like the Pfingstberg, neuer Garten, Marmor Palace or the holländisches Viertel and ended the tour there. There are so many things to see in Potsdam!!
+Today is Wednesday, 25 September. Today we conducted a survey about mobile phone use throughout the school. 
+Why are we doing this? 
+We want to know how much time we spend on our mobile phones and for what. We also asked the students  these questions. Then we analysed the results of the survey and drew a conclusion. Because let's be honest, we all use our mobile phones very often. But is that necessary? We should ask ourselves that.
+After lunch, we developed our own Erasmus logos together and then printed or painted them on shirts using the screen printing technique. 
+Do you know what screen printing is?  
+Screen printing is a printing technique in which colour is transferred through a screen onto a T-shirt, for example. You need a stencil for this,…
+
+		</div>
+        
+		<div class="finishtable">
+			Finnish student
+<br>
+<br>
+It's Day 1 of our exchange in Potsdam. After an eventful day at school full of new people we separated into smaller groups and went to explore the city
+During our walk in the park we saw huge beautiful trees that were nothing like in Kalajoki. The surroundings reminded us of all the fantasy books we've read: ancient ruins, enormous trees, a big palace with an impressive fountain. The most fun we had was when racing down a hill laughing smiling and almost falling. The atmosphere was light, bright and free. 
+Continuing our walk into the center we saw beautiful buildings, that reminded us about France and Italy.  There were plenty of little shops that we visited and purchased some souvenirs. The town is wonderful even though it is so much different from Kalajoki and what we are used to.
+After a beautiful excursion in the city, we went to have some refreshing ice cream in the city centre. It is always nice to walk in a city that big and charming. Our journey continued into a cosy welcoming place: to my host's house, where our friends and us had dinner. Even though it was only the second day, we already felt comfortable and open next to our new friends. We spent the rest of the evening singing, dancing, smiling and laughing together, leaving through something that now has become one of my favourite memories from the trip. "Umbrella" by Rihanna is still playing in my head and all these happy and warm pictures of our evening pop up at the same time.
+Wednesday, 25th
+In the afternoon will happen something special! We'll screenprint something on the t-shirts! We've no idea how we'll do it, because most of us have never done that before. It's brilliant idea that we'll create a design ourselves and we'll get t-shirts as a souvenir from Germany! We get to know each other much better with common activities. 
+The thing that we started to plan on paper is was an Erasmus logo! I've always wanted to try to draw on t-shirt, but that's was even more smaizing experience! Firstlty our teacher told us about types of logos. We got to know how many options we actually had! We could draw the things that reminder us of Germany or our own experience in general.
+We had an brainstorm in our head while we're thinking…
+<br>
+<br>
+		</div>
+	</div>
+
+<br>
+<br>
+Conclusion of the survey
+
+<br>
+<br>
+Most teenagers these days agree that phones and technological devices shouldn't be handed easily to kids as they are still in a developing phase of their life and the time spent on the phones for most of them causes an addiction. Teenagers expressed that the absence of technologic devices bring them happiness, and they feel relaxed more than feeling anxious or stressed. That shows us that on a daily basis, phones and technological devices can tire us out. Among teens, phones are used mostly for communication and the usage of social media.
+	</h6>
+	</div>
+			`;
+		}
+	</script>
+    <footer class="footer">
+		<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="color: #F7F7F7; margin-bottom: 5vw;">Impressum</a>
+		<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="color: #F7F7F7; margin-bottom: 5vw;">Datenschutz</a>
+	</footer>
+</body>
+</html>
+
+

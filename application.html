@@ -1,0 +1,565 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+ <style>
+
+    button{
+		background-color: 08325A;
+		 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 20px;
+	 border: none;
+	}
+	body {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	  }
+	button:hover{
+		background-color: 062645;
+	}
+	.menudiv{
+		height: 109px; /* Pozwala na elastyczną wysokość */
+    width: 99vw; /* Pełna szerokość */
+    background-color: #08325A; /* Kolor tła */
+    display: flex;
+    align-items: center; /* Wyrównanie pionowe */
+    justify-content: space-between; /* Przestrzeń między elementami */
+    padding: 10px; /* Margines wewnętrzny */
+    box-sizing: border-box; 
+		 
+		}
+		
+	.logotekst{
+	 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 50px;
+	 margin: 20px;
+	}
+	.space{
+		flex-grow: 1;
+	}
+	.menu{
+	 display: none; 
+	font-family: sans-serif;
+		width: 97.48vw;
+		margin-top: 65px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: absolute;
+            top: 50px; /* Adjust as needed */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+			font-size: 0.1m;
+			padding: 9px;
+		background-color: 08325A;
+		border: none;
+	    
+	}
+	a{
+		padding: 9px;
+		width: 70px;
+		color: white;
+		
+	}
+	img{
+	margin-top: 19px;
+	 height: 50px;
+	 border-radius: 4px;
+	}
+	.steckbrief{
+		margin-top: 39px;
+		height: 550px;
+		width: auto;
+		border: solid;
+	}
+	.tekstdiv{
+		width: 70vw;
+		height: 200px;
+		word-break: break-word;
+		border-radius: 4px;
+	}
+	.tekstindiv{
+
+		font-size: 21px;
+		color: 515151;
+	}
+	.tekstindiv1{
+		padding: 4px;
+		margin: 9px;
+		font-size: 11px;
+	    color: 2cb9ea;
+	}
+	.tekstindiv2{
+		display: table-row;
+		padding: 11px;
+		margin: 9px;
+		font-size: 19px;
+	 
+	}
+	.source{
+		text-decoration: none;
+	}
+	.content{
+		margin-left: 90px;
+		font-family: sans-serif;
+	} 
+	.addictionalspace{
+	    height: 200px;
+	}
+	*{
+	 font-family: 	Verdana;
+	}
+	@media (max-width: 800px) {
+		.menudiv {
+			width: 95.92vw;
+		}
+		.logotekst1{
+			font-size: 20px;
+		}
+		h2{
+			font-size: 12px;
+		}
+		
+		.source{
+			font-size: 12px;	
+		}
+		.tekstindiv{
+			width: 82vw;
+			font-size: 10.2px;
+		}
+		.menu{
+			right: 0.2%;
+			width: 90.92vw;
+			margin-right: 9px;
+		}
+		.tekstindiv1{
+			font-size: 10.2px;
+			width: 322px;
+		}
+		.tekstindiv2{
+			font-size: 12.2px;
+			width: 222px;
+		}
+		
+		h1{ 
+			font-size: 22px;
+			margin-left: 4px;
+		}
+		.tekstdiv{
+			width: 70vw;
+  			
+		}
+		.erasmusimg{
+			width: 200px;
+			height: 102px;
+			margin-left: 0px;
+		}
+		.steckbrief{
+			height: 222px;
+		}
+		.content{
+			margin-left: 0px;
+			height: 100vw;
+			align-items: center;
+		}
+		.logoimag1{
+			height: 22px;
+
+		}
+		.button{
+			margin-top: 9px;
+			width: 200px;
+			height: 22px;
+			font-size: 10.2px;
+		}
+		#project{
+			width: 70%;
+		}
+		#projecttitle{
+			font-size: 20px;
+		}
+	}
+	
+ </style>
+  <style>
+	.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+		font-size: auto;
+	}
+	.logoimag1{
+		margin-left: 1vw;
+		margin-top: 25px;
+		height: 40px;
+	}
+	.space1{
+		width: 65.2vw;
+	}
+	.menubutn1{
+		margin-left: 100px;
+		
+	}
+	.source1{
+		text-decoration: none;
+		color: white;
+	}
+
+
+
+ </style>
+ <style>
+	
+	.footer {
+		width: 100.9vw;
+		height: auto + 5vw;
+		background-color: #062645;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		box-sizing: border-box;
+	  }
+	  .footer{
+		width: 101vw;
+		height: 9vh;
+		margin-left: -10;
+		margin-bottom: -10;
+		place-items: center; 
+		background-color: #062645;
+
+		display: flex;
+  	justify-content: center; /* Center horizontally */
+  align-items: center;  
+	}
+	.menudivs{
+		background-color: #08325A;
+		margin-top: -10;
+	margin-left: -10;
+		width: 102vw;
+   		top: 0;
+		display: flex;
+    	left: 0;
+	}
+	.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+		font-size: auto;
+	}
+	.logoimag1 {
+		height: 40px;
+		margin-left: 10px;
+
+	}
+	.space1{
+		width: 65.2vw;
+	}
+	.menubutn1{
+		margin-left: 100px;
+		
+	}
+	
+	.menu, .menu1 {
+		display: none;
+		font-family: sans-serif;
+		width: 100vw;
+		background-color: #08325A;
+		border: none;
+		padding: 10px;
+		position: absolute;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		margin: -9px;
+	  }
+	.source1{
+		text-decoration: none;
+		color: white;
+	}
+	@media (max-width: 800px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		.steckbrief{
+			margin-top: 19vw;
+		}
+		
+		.space1{
+			width: 25.2vw;
+		}
+		.tekstindiv{
+			width: 70vw;
+		}
+		.tekstdiv{
+  			width: 70vw;
+		}
+		.menudiv1 {
+			width: 95.92vw;
+		}
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		
+		
+		.footere{
+			margin: auto;
+			text-decoration: none;
+ 			color: aliceblue;
+			padding: 10px;
+
+			font-size: 2.9vw;
+		}
+		.footer{
+			margin-top: 10vh;
+			width: 105vw;
+		}
+	}
+	@media (max-width: 800px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		
+		.space1{
+			width: 25.2vw;
+		}
+	
+	}
+	@media (max-width: 800px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		.email{
+			margin-top: 40vh;
+		}
+	
+		.space1{
+			width: 25.2vw;
+		}
+	
+	}
+
+
+
+
+
+
+
+
+	
+.menudivs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #08325A;
+	padding: 10px;
+	color: white;
+	font-family: 'Segoe UI', sans-serif;
+	min-height: 20vh;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 100vw;
+}
+
+
+.logotekst1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+}
+
+#menubutn1 {
+	background-color: #ffffff;
+	color: #08325A;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-right: 40px;
+}
+
+#menubutn1:hover {
+	background-color: #e0e0e0;
+}
+
+.space1 {
+	flex: 1;
+}
+
+/* RESPONSYWNOŚĆ DLA MAŁYCH EKRANÓW */
+@media (max-width: 700px) {
+	.logotekst1{
+		margin-left: 20px;
+	}
+	.logoimag1 {
+		margin-bottom: 29px;
+		margin-right: 29px;
+		margin-top: 42px;
+	}
+}
+@media (min-width: 1700px){
+	#menubutn1 {
+		background-color: #ffffff;
+		color: #08325A;
+		border: none;
+		padding: 10px 20px;
+		font-size: 40px;
+		font-weight: 600;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		margin-right: 40px;
+	}
+	.logoimag1 {
+		height: 100px;
+		margin-bottom: 10px;
+		margin-left: 12vw;
+	  }
+	  .logotekst, .logotekst1 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 90px;
+        margin: 20px;
+		width: 19vh;
+        margin-left: 4vw;
+      }
+	  .footer{
+		font-size: 70.7px;
+	  }
+	  .menu1{
+	   margin: -9px;
+	  }
+	  .source1 {
+		
+		font-size: 2rem;
+	  }
+	  .steckbrief{
+		height: 59vh;
+		width: auto;
+	  }
+	  h6{
+		font-size: 59px;
+	  }
+	  .button{
+		width: 19vw;
+		height: auto;
+		font-size: 39px;
+	  }
+	  .tekstdiv{
+		
+	  }
+	  .tekstindiv1{
+		font-size: 2rem;
+	}
+	  .tekstindiv{
+		font-size: 2rem;
+		width: 50vw;
+	  }
+	  .footer{
+		font-size: 2rem;
+	  }
+	  .email{
+		margin-top: 12vh;
+		font-size: 2rem;
+	  }
+}
+ </style>
+</head>
+<body>
+	<div class="menudivs">
+		<h1 class="logotekst1">Erasmus+</h1>
+		<img class="logoimag1" src="logo.png">
+		<div class="space1"></div>
+		<button id="menubutn1" onclick="Menu()">Menu</button>
+	</div>
+	<center>
+		<div class="menu1" id="menu">
+			<center>
+			   <a href="index.html" class="source1">Homepage</a>
+		   <br>
+		   <br>
+		   <a href="whatiserasmus.html" class="source1">What is Erasmus</a>
+		   <br>
+		   <br>
+		   <a href="application.html" class="source1">application</a> 
+		   <br>
+		   <br>
+		   <a href="partnerschools.html" class="source1">partner schools</a>
+			</center>
+		   
+	   </div>
+	</center>
+	<div class="content">
+	<center>
+		<h1>APPLICATION</h1>
+	<img class="steckbrief" src="steckbrief.png">
+	<br>
+	<br>
+	<a href="steckbrief.pdf">
+		<button  class="button">Steckbrief PDF</button>
+	</a>
+	
+	<br>
+</center>
+<center>
+	<div class="tekstdiv">
+	
+		<h6 class="tekstindiv">
+			If you want to join the Erasmus project you need to write down your motivation and fill your profile. You can find the profile sheet on the website. The motivation sheet has to be written in English and must be more or less one page. Don't forget to hand it to the Erasmus team in time. You don't need anything else. If you have more questions ask the Erasmus team in our school or write them.
+		 </h6>
+	
+	
+
+	 <br>
+	 <br>
+	
+	</div>
+	
+</center>
+	</div>
+	<center>
+		<div class="email">
+			Contacts:
+			<button onclick="ShowEmailAddress()" class="button">click to show email addresses</button>
+			
+			 <h6 class="tekstindiv1" id="htext">
+			</h6>
+		</div>
+		</center>
+	<div class="addictionalspace"></div>
+	
+	<br>
+	<script src="script.js"></script>
+	<script>
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+	</script>
+
+
+<center>
+	<footer class="footer">
+		<div class="footere">
+			<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue; ">Impressum</a>
+		<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
+		</div>
+		
+	  </footer>
+</center>
+</body>
+</html>

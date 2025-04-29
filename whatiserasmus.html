@@ -1,0 +1,476 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+ <style>
+    button{
+		background-color: 08325A;
+		 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 20px;
+	 border: none;
+	}
+	button:hover{
+		background-color: 062645;
+	}
+	.menudiv{
+		height: 14vh;
+		width: 101vw;
+		background-color: #08325A;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: -7.7px;
+		padding: 10px;
+		box-sizing: border-box;
+		 
+		}
+		
+	.logotekst{
+	 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 50px;
+
+	}
+	.space{
+		flex-grow: 1;
+	}
+	.menu{
+	 display: none; 
+	font-family: sans-serif;
+	width: 97.48vw;
+		margin-top: 65px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: absolute;
+            top: 50px; /* Adjust as needed */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+			font-size: 0.1m;
+			padding: 9px;
+		background-color: 08325A;
+		border: none;
+	}
+	a{
+		padding: 9px;
+		width: 70px;
+		color: white;
+		
+	}
+	img{
+	margin-top: 19px;
+	 height: 50px;
+	}
+	.tekstdiv{
+		width: 400px;
+		height: 120px;
+		
+		word-break: break-word;
+		
+	}
+	
+	*{
+	 font-family: 	Verdana;
+	}
+	.erasmusimg{
+		height: 300px;
+		width: 665px;
+		margin-left: 79px;
+	}
+
+	.tekstindiv{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		color: 515151;
+		width: 400px;
+	}
+	.source{
+		text-decoration: none;
+	}
+	.tekstindiv1{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		color: 515151;
+		width: 1050px;
+	}
+	.tekstindiv2{
+		padding: 4px;
+		margin: 9px;
+		font-size: 19px;
+		width: 1050px;
+	}
+	.alldivs{
+	   display: flex;
+	   width: 100%;
+	   height: 100%;
+	}
+	
+	.tekstrest{
+	  width: 100%;
+	}
+	.LI{
+	  margin-left: 9px;
+	}
+	@media (max-width: 700px) {
+		.menudiv {
+			width: 95.92vw;
+		}
+		.logotekst{
+			font-size: 20px;
+		}
+		h2{
+			font-size: 12px;
+		}
+		.logoimag{
+			width: 50px;
+			height: 29px;
+			margin-bottom: 9px;
+			margin-right: 29px;
+	
+		}
+		.source{
+			font-size: 12px;	
+		}
+		.tekstindiv{
+
+			width: 42vw;
+			font-size: 10.2px;
+		}
+		
+		.menu{
+			right: 0.2%;
+			width: 90.92vw;
+			margin-right: 9px;
+		}
+		.tekstindiv1{
+			font-size: 10.2px;
+			width: 322px;
+		}
+		
+		.tekstindiv2{
+			font-size: 12.2px;
+			width: 222px;
+		}
+		h1{ 
+			font-size: 22px;
+			margin-left: 4px;
+		}
+		.tekstdiv{
+			width: 200px;			
+		}
+		.erasmusimg{
+			width: 200px;
+			height: 102px;
+			margin-left: 0px;
+		}
+		#project{
+			width: 70%;
+		}
+		#projecttitle{
+			font-size: 20px;
+		}
+	}
+ </style>
+  <style>
+	.menudivs{
+		background-color: #08325A;
+		width: 102vw;
+		height: 20vh;
+		margin-top: -10;
+		margin-left: -10;
+    	top: 0;
+		display: flex;
+    	left: 0;
+	}
+	.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+	
+		font-size: auto;
+	}
+	.logoimag1{
+		margin-left: 1vw;
+		margin-top: 25px;
+		height: 40px;
+	}
+	.space1{
+		width: 65.2vw;
+	}
+	.menubutn1{
+		margin-left: 100px;
+		
+	}
+	.menu, .menu1 {
+		display: none;
+		font-family: sans-serif;
+		width: 100vw;
+		background-color: #08325A;
+		border: none;
+		padding: 10px;
+		position: absolute;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		margin: -9px;
+	  }
+	.source1{
+		text-decoration: none;
+	}
+	@media (max-width: 700px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+			margin-left: 20px;
+		}
+		.logoimag1{
+			height: 22px;
+			margin-top: 42px;
+		}
+		.space1{
+			width: 25.2vw;
+		}
+		.footere{
+			margin: auto;
+			text-decoration: none;
+ 			color: aliceblue;
+			padding: 10px;
+
+			font-size: 2.9vw;
+		}
+		
+	}
+	
+
+
+
+
+	.footer {
+  width: 100vw;
+  height: auto;
+  background-color: #062645;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  
+}
+
+.footer{
+	width: 101vw;
+	height: 9vh;
+	margin-left: -10;
+	margin-bottom: -10;
+	place-items: center; 
+	background-color: #062645;
+
+	display: flex;
+  justify-content: center; /* Center horizontally */
+align-items: center;  
+}
+
+
+
+
+
+
+
+
+
+
+.menudivs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #08325A;
+	padding: 10px;
+	color: white;
+	font-family: 'Segoe UI', sans-serif;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 100vw;
+}
+
+.logoimag1 {
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.logotekst1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+}
+
+#menubutn1 {
+	background-color: #ffffff;
+	color: #08325A;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-right: 40px;
+}
+
+#menubutn1:hover {
+	background-color: #e0e0e0;
+}
+
+.space1 {
+	flex: 1;
+}
+
+/* RESPONSYWNOŚĆ DLA MAŁYCH EKRANÓW */
+@media (max-width: 700px) {
+	.logotekst1{
+		margin-left: 20px;
+	}
+	.logoimag1 {
+		margin-bottom: 29px;
+		margin-right: 29px;
+	}
+}
+@media (min-width: 1700px){
+	.menudivs{
+		min-height: 20vh;
+	}
+	#menubutn1 {
+		background-color: #ffffff;
+		color: #08325A;
+		border: none;
+		padding: 10px 20px;
+		font-size: 40px;
+		font-weight: 600;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		margin-right: 40px;
+	}
+	.logoimag1 {
+		height: 100px;
+		margin-bottom: 10px;
+		margin-left: 12vw;
+	  }
+	  .logotekst, .logotekst1 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 90px;
+        margin: 20px;
+		width: 19vh;
+        margin-left: 4vw;
+      }
+	  .footer{
+		font-size: 180%;
+	  }
+	  .menu1{
+	   margin: -9px;
+	  }
+	  .source1 {
+		font-size: 180%;
+	  }
+	  .tekstindiv{
+		font-size: 2rem;
+		width: 50vw;
+	  }
+	  .tekstindiv1{
+		font-size: 2rem;
+		width: 80vw;
+	  }
+	  .tekstindiv2{
+		font-size: 2rem;
+		width: 50vw;
+	  }
+	  h1{
+		font-size: 70px;
+		width: 50vw;
+	  }
+	  .erasmusimg{
+		margin-left: 32vw;
+		margin-bottom: 8vh;
+		height: 29vh;
+		width: auto;
+	  }
+}
+ </style>
+</head>
+<body>
+	<div class="menudivs">
+		<h1 class="logotekst1">Erasmus+</h1>
+		<img class="logoimag1" src="logo.png">
+		<div class="space1"></div>
+		<button id="menubutn1" onclick="Menu()">Menu</button>
+	</div>
+	<center>
+		<div class="menu1" id="menu">
+			<center>
+			   <a href="index.html" class="source1">Homepage</a>
+		   <br>
+		   <br>
+		   <a href="whatiserasmus.html" class="source1">What is Erasmus</a>
+		   <br>
+		   <br>
+		   <a href="application.html" class="source1">application</a> 
+		   <br>
+		   <br>
+		   <a href="partnerschools.html" class="source1">partner schools</a>
+			</center>
+		   
+	   </div>
+	</center>
+	<h1>What is Erasmus?</h1>
+	<div class="alldivs">
+	    <div class="tekstdiv">
+	<h6 class="tekstindiv">
+	   Erasmus+ is European Union (EU) program aimed at supporting education, training, youth and sport across Europe. Launched in 2014. <br><br> Student and Staff Mobility: <br> Students can study or do internships abroad, while teachers, trainers and other staff can work. <br><br> Youth Exchanges and Volunteering: <br>Young people can participate in exchanges, volunteer programms and youth-related collaboration. <br><br> Sport Development: <br> 
+	</h6>
+		<h6 class="tekstindiv1">
+ Erasmus+ supports projects aimed at promoting physical activity and tackling challenges in sport, such as inclusion and equality.
+	    </h6>
+		<br>
+		   <h6 class="tekstindiv2">
+		   Erasmus+ strengthens and promotes
+		   </h6>
+		   <h6 class="tekstindiv1">
+          <li class="LI">the European dimension of teaching and learning</li>
+		  <li class="LI">values such as integration and diversity, tolerance and democratic participation</li>
+		  <li class="LI">digital learning</li>
+	      <li class="LI">ecological sustainability and environmentally friendly behavior</li>
+		  <li class="LI">knowledge of the common European heritage and diversity</li>
+		  <li class="LI">the development of professional networks across Europe.</li>
+	    </h6>
+	</div>
+	<img class="erasmusimg" src="erasmus.png">
+
+	</div>
+		<h6>Bild: https://www.consilium.europa.eu/media/54319/erasmus.png</h6>
+	<script>
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+	</script>
+
+<center>
+	
+</center>
+<footer class="footer">
+	<div class="footere">
+		<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue; ">Impressum</a>
+	<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
+	</div>
+	
+  </footer>
+</body>
+</html>
