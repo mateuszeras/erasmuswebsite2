@@ -1,0 +1,269 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menudivs">
+	<h1 class="logotekst1">Erasmus+</h1>
+	<img class="logoimag1" src="logo.png">
+	<div class="space1"></div>
+	<button id="menubutn1" onclick="Menu()">Menu</button>
+</div>
+<center>
+	<div class="menu1" id="menu">
+	<center>
+	   <a href="index.html" class="source1">Inicio</a>
+	   <br>
+	   <br>
+	   <a href="whatiserasmus.html" class="source1">¿Qué es Erasmus?</a>
+	   <br>
+	   <br>
+	   <a href="application.html" class="source1">Solicitud</a> 
+	   <br>
+	   <br>
+	   <a href="partnerschools.html" class="source1">Escuelas asociadas</a>
+	</center>
+</div>
+</center>
+
+
+	<center>
+	<img src="davincischool.png" class="slogan">
+	</center>
+		<div class="backgrounder" style="flex: 1;">
+		<br>
+	<div id="project" class="projectbutton" onclick="changeSize()">
+			<h2 style="margin-left: 9px;" id="projecttitle">Project "Not without my phone" +</h2>
+			
+	</div>
+	<div style="margin-left: 20px;" id="projectcontent"></div>
+	<br>
+	<div id="project1" class="projectbutton1" onclick="Change()">
+		<h2 style="margin-left: 9px;" id="projecttitle1">Erasmus exchange in Finland +</h2>
+		
+	</div>
+	<div style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;" id="projectcontent1">
+		
+	</div>
+	<script>
+		document.getElementById("projectcontent").innerHTML = "";
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+		function changeSize(){
+			const backgrounder = document.querySelector('.backgrounder');
+			backgrounder.style.height = `${window.height}px`;
+			let a = document.getElementById("projectcontent").innerHTML;
+			if(a == ""){
+				document.getElementById("projecttitle").innerText = 'Project "Not without my phone" -' ;
+				Larger()
+			}
+			else{
+				document.getElementById("projectcontent").innerHTML = "";
+				document.getElementById("projecttitle").innerText = 'Project "Not without my phone" +';
+			}
+		}
+        function Larger(){
+			document.getElementById("projectcontent").innerHTML = `
+	<h2>Hicimos una encuesta en nuestra escuela sobre el uso de los teléfonos inteligentes, aquí puedes ver nuestros resultados:</h2>
+<div class="alldivs">
+  <h6 class="tekstindiv1">
+    <div class="images">
+      <img class="erasmusimg3" src="whatisyourage.jfif">
+      <img class="erasmusimg3" src="gender.jfif">
+    </div>
+    Preguntamos la edad de los encuestados y la edad más común fue 15 años. Todos los encuestados tenían entre 12 y 18 años.
+    También preguntamos su género. Los géneros de los estudiantes están casi al 50-50, podría haber un error en el sistema porque no todos los estudiantes respondieron. Pero hubo un poco más de chicos.
+  </h6>
+</div>
+
+<br>
+<br>
+<h2 class="survey">Encuestas</h2>
+<h2>¿Cuál es la mejor edad para tener un teléfono?</h2>
+<div class="specialdivs">
+  <img class="erasmusimg" src="agetogetsmartphone.jfif">
+  <br>
+  <h6 class="tekstindivs">
+    La mayoría de las personas piensan que la mejor edad para tener un teléfono inteligente es entre los 10 y 13 años. La edad mínima es 6 años y la máxima es 18 años.
+  </h6>
+</div>
+
+<h2>¿Cómo te sientes sin tu teléfono?</h2>
+<div class="specialdivs">
+  <h6 class="tekstindiv44">
+    Aquí puedes ver las respuestas a la pregunta: "¿Cómo te sientes sin tu teléfono?".
+  </h6>
+  <br>
+  <img class="erasmusimg1" src="feelwithoutphone.jfif">
+  <div style="height:100px"></div>
+</div>
+
+<h2>¿Cuántas horas pasas con tu teléfono?</h2>
+<div class="alldivs">
+  <h6 class="tekstindiv1">
+    <div class="images">
+      <img class="erasmusimg44" src="howmanyhoursdo.jfif">
+      <img class="erasmusimg44" src="phoneaddition.jfif">
+    </div>
+    <br>
+  </h6>
+</div>
+
+<h2>¿Dónde pones tu teléfono por la noche?</h2>
+<div class="alldivs">
+  <img class="erasmusimg2" src="whereputyourphone.jfif">
+</div>
+
+<br>
+<br>
+<h2>Aquí hay algunas impresiones sobre la semana que pasamos juntos:</h2>
+<h6 class="tekstindiv2">
+  <br>
+  <div class="table">
+    <div class="germantable">
+      Estudiante alemán
+      <br><br>
+      Primero jugamos al bingo para conocernos.
+      <br><br>
+      ¿Qué es el bingo exactamente?
+      <br>
+      Para nosotros, el bingo es un intercambio de información, algo que jugamos en clase después de unas vacaciones para saber qué han hecho los demás. Después hicimos un recorrido por la escuela. Bastante normal para nosotros, ¿verdad? Pero los finlandeses parecían muy entusiastas e interesados. Luego tuvimos una introducción a nuestro proyecto. Allí se hicieron evidentes los diferentes intereses. Nos dividimos en dos grupos. El primer grupo se encargó del diseño del sitio web, el otro del contenido. Al final del día escolar, cocinamos ensalada de papas y albóndigas juntos. Algo tradicionalmente alemán.
+      <br><br>
+      Hoy en la escuela invitamos a una experta en periodismo: Petra. En la primera hora discutimos sobre cómo llenar nuestro sitio web y cómo hacerlo interesante. ¿Sabes cómo escribir una entrada de blog llamativa? ¡Ahora sí! Debe comenzar con un inicio atractivo. A lo largo del blog debe parecer una conversación, con algo de interacción con el lector. Más tarde pensamos 6 preguntas sobre el uso del teléfono para nuestra encuesta y nos dividimos en grupos para mañana. ¿Cuántas horas pasas en tu teléfono cada día?
+      <br><br>
+      En la última hora hicimos una excursión por Potsdam preparada por Milena y Linnea. Después de 6 km y dos horas, vimos unos 6 de los lugares más famosos como el Pfingstberg, el Neuer Garten, el Palacio de Mármol o el Barrio Holandés y terminamos allí. ¡Hay tantas cosas que ver en Potsdam!
+      <br><br>
+      Hoy es miércoles, 25 de septiembre. Hoy realizamos una encuesta sobre el uso del teléfono móvil en toda la escuela.
+      <br>
+      ¿Por qué hacemos esto?
+      <br>
+      Queremos saber cuánto tiempo pasamos en nuestros teléfonos móviles y para qué. También les hicimos estas preguntas a los estudiantes. Luego analizamos los resultados y sacamos una conclusión. Porque seamos honestos, todos usamos mucho nuestros teléfonos. ¿Pero es necesario? Deberíamos preguntárnoslo.
+      <br><br>
+      Después del almuerzo, diseñamos nuestros propios logotipos de Erasmus y luego los imprimimos o pintamos en camisetas con la técnica de serigrafía.
+      <br>
+      ¿Sabes qué es la serigrafía?
+      <br>
+      La serigrafía es una técnica de impresión en la que el color se transfiere a través de una malla a una camiseta, por ejemplo. Necesitas una plantilla para esto…
+    </div>
+
+    <div class="finishtable">
+      Estudiante finlandés
+      <br><br>
+      Es el primer día de nuestro intercambio en Potsdam. Después de un día lleno de eventos en la escuela con muchas personas nuevas, nos separamos en grupos pequeños y fuimos a explorar la ciudad.
+      <br>
+      Durante nuestro paseo por el parque vimos árboles enormes y hermosos, muy distintos a los de Kalajoki. Los alrededores nos recordaban a todos los libros de fantasía que hemos leído: ruinas antiguas, árboles gigantes, un gran palacio con una fuente impresionante. Nos divertimos mucho bajando una colina riendo, sonriendo y casi cayéndonos. La atmósfera era ligera, brillante y libre.
+      <br><br>
+      Continuando nuestro paseo hacia el centro, vimos edificios hermosos que nos recordaron a Francia e Italia. Había muchas tienditas que visitamos y donde compramos recuerdos. La ciudad es maravillosa, aunque es muy distinta a Kalajoki y a lo que estamos acostumbrados.
+      <br><br>
+      Después de la hermosa excursión por la ciudad, fuimos a tomar un helado refrescante en el centro. Siempre es agradable caminar por una ciudad tan grande y encantadora. Nuestro viaje continuó hasta un lugar acogedor y hospitalario: la casa de mi anfitrión, donde cenamos con nuestros amigos. Aunque era solo el segundo día, ya nos sentíamos cómodos y abiertos con nuestros nuevos amigos. Pasamos el resto de la noche cantando, bailando, sonriendo y riendo juntos, viviendo algo que ahora se ha convertido en uno de mis recuerdos favoritos del viaje. "Umbrella" de Rihanna todavía suena en mi cabeza, y todas esas imágenes felices y cálidas de nuestra velada aparecen al mismo tiempo.
+      <br><br>
+      Miércoles 25
+      <br>
+      ¡Por la tarde pasará algo especial! ¡Vamos a estampar algo en las camisetas! No tenemos idea de cómo hacerlo, porque la mayoría de nosotros nunca lo ha hecho. ¡Es una idea genial que creemos un diseño nosotros mismos y que nos llevemos camisetas como recuerdo de Alemania! Nos conocemos mucho mejor con actividades comunes.
+      <br><br>
+      ¡La cosa que empezamos a planear en papel fue un logo de Erasmus! ¡Siempre quise intentar dibujar en una camiseta, pero esta fue una experiencia aún más increíble! Primero nuestro profesor nos habló sobre los tipos de logotipos. ¡Aprendimos cuántas opciones teníamos! Podíamos dibujar cosas que nos recordaban a Alemania o a nuestra experiencia en general.
+      <br><br>
+      Tuvimos una tormenta de ideas en nuestras cabezas mientras pensábamos…
+    </div>
+  </div>
+
+<br><br>
+Conclusión de la encuesta
+<br><br>
+La mayoría de los adolescentes de hoy en día están de acuerdo en que los teléfonos y dispositivos tecnológicos no deberían entregarse fácilmente a los niños, ya que aún están en una fase de desarrollo y el tiempo que pasan con los teléfonos causa una adicción para la mayoría. Los adolescentes expresaron que la ausencia de dispositivos tecnológicos les trae felicidad y se sienten más relajados que ansiosos o estresados. Eso nos muestra que, en el día a día, los teléfonos y dispositivos tecnológicos pueden agotarnos. Entre los adolescentes, los teléfonos se usan principalmente para comunicarse y para el uso de redes sociales.
+</h6>
+</div>
+			`;
+		}
+
+
+		function Change(){
+			let a = document.getElementById("projectcontent1").innerHTML;
+			if(a == ""){
+				document.getElementById("projecttitle1").innerText = 'Erasmus exchange in Finland -';
+				ChangeHTML()
+			}
+			else{
+				document.getElementById("projectcontent1").innerHTML = "";
+				document.getElementById("projecttitle1").innerText = 'Erasmus exchange in Finland +';
+			}
+		}
+
+		function ChangeHTML(){
+		document.getElementById("projectcontent1").innerHTML = `
+			<img src="eras.jpeg" class="finlandpictures" alt="">
+<img src="eras1.jpg" class="finlandpictures" alt="">
+<img src="finland1.jpg" class="finlandpictures1" alt="">
+<br>
+<div class="finntext">
+  <strong>De las Auroras Boreales a las Delicias Finlandesas: Un Comienzo Inolvidable en Kalajoki</strong>
+  <br><br>
+
+  El domingo se sintió como un sueño. Fue nuestro primer día con las familias anfitrionas, y lo comenzamos visitando un centro comercial con algunas otras familias. Compartimos risas durante una comida en Helburger y luego pasamos la tarde jugando juegos de mesa y fortaleciendo vínculos en casa de una familia anfitriona.
+  <br>
+  ¿Lo mejor? De camino a casa, las auroras boreales iluminaron el cielo—un fenómeno raro en Kalajoki, que apareció solo por cuarta vez en todo el invierno. Los colores bailaban sobre nosotros, convirtiendo un día ya increíble en algo verdaderamente inolvidable.
+  <br>
+  El lunes entramos en la escuela finlandesa, Lukio, ¡y fue absolutamente mágico! Los profesores nos recibieron con tanta calidez y nos guiaron durante una semana increíble. Comenzamos con juegos de integración y actividades en equipo que unieron a todos. Por la tarde, algunos de nosotros pudimos hornear postres tradicionales finlandeses. El inicio perfecto para una semana inolvidable.
+  <br><br>
+
+  <strong>Martes con pesadillas y hielo</strong>
+  <br><br>
+
+  El martes comenzó con un encuentro de estudiantes de Italia, Brasil, Alemania, Finlandia y otros países. Tras la presentación de nuestra escuela, hablamos sobre “Finnish Nightmares” y “Pesadillas Alemanas”. Los cómics de “Finnish Nightmares” muestran escenas divertidas de pequeños horrores cotidianos, como el small talk con extraños o personas que se paran demasiado cerca. Creamos nuestros propios cómics de “Pesadillas Alemanas” y los comparamos con los “Finnish Nightmares”.
+  <br>
+  Luego fuimos con los finlandeses a la pista de hielo: patinamos, jugamos hockey sobre hielo y celebramos un cumpleaños. Para terminar el día escolar, visitamos un museo sobre una antigua familia finlandesa—¡se dice que todavía está embrujado! El resto del día lo pasamos jugando, haciendo deporte y yendo de compras.
+  <br><br>
+
+  <strong>Miércoles: La nieve convierte a Finlandia en un cuento de invierno</strong>
+  <br><br>
+
+  El miércoles trajo variedad y diversión: después de trabajar en nuestros proyectos escolares, jugamos un juego de equipo poco común en el que construimos torres con espaguetis y cinta adhesiva. Fue sorprendentemente divertido y fortaleció nuestro espíritu de equipo.
+  <br>
+  Por la tarde, participamos en unas olimpiadas de invierno, compitiendo en parejas de manera lúdica. Estos desafíos nos acercaron aún más a nuestros compañeros de intercambio finlandeses.
+  <br>
+  La noche fue libre: algunos durmieron en grupo, otros fueron a jugar a los bolos, a la sauna o a actividades al aire libre. La nieve recién caída transformó Finlandia en lo que siempre habíamos imaginado: nevada, mágica y llena de experiencias que quedarán grabadas en nuestra memoria.
+  <br><br>
+
+  <strong>Jueves:</strong>
+  <br><br>
+
+  Primero, seguimos trabajando en nuestro proyecto Erasmus. Después, pudimos asistir a clases con nuestros compañeros finlandeses.
+  <br>
+  (Notamos muchas similitudes con nuestro sistema escolar alemán. Además, nos impresionó mucho el uso de la tecnología en las clases).
+  <br>
+  Por la tarde, fuimos todos a un centro juvenil. Allí jugamos al billar, al ping-pong y a las cartas, comimos galletas, escuchamos música y pasamos una tarde maravillosa juntos :)
+  <br><br>
+
+  <strong>Último día en Finlandia:</strong>
+  <br><br>
+
+  Después de la sauna, fuimos a casa a comer algo. Más tarde fuimos a la costa de Kalajoki. Allí dimos un paseo por la nieve. Fue muy agradable caminar sobre la nieve que crujía bajo nuestros pies. Qué sonido tan bonito. Por la noche tuvimos que hacer las maletas porque al día siguiente volvíamos a Potsdam.
+  <br>
+  Fue un tiempo maravilloso en Finlandia, lleno de nuevas impresiones y recuerdos. Una gran oportunidad para conocer gente nueva y hacer nuevos amigos. En resumen, Erasmus+ es una experiencia fantástica y la recomendaríamos a otros.
+  <br><br>
+  ¡Gracias Erasmus+ por este tiempo maravilloso!
+</div>
+		`
+		}
+	</script>
+	</div>
+<center>
+	<footer class="footer">
+		<div class="footere">
+		  <a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue;">Impressum</a>
+		  <a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
+		</div>
+	  </footer>
+</center>
+</body>
+</html>
+
+
