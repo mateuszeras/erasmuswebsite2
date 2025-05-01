@@ -1,0 +1,360 @@
+
+	
+	*{
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+button{
+		background-color: 08325A;
+		 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 20px;
+	 border: none;
+	}
+	button:hover {
+		background-color: #062645;
+	}
+	.menudiv{
+		height: 109px; /* Pozwala na elastyczną wysokość */
+    width: 99vw; /* Pełna szerokość */
+    background-color: #08325A; /* Kolor tła */
+    display: flex;
+    align-items: center; /* Wyrównanie pionowe */
+    justify-content: space-between; /* Przestrzeń między elementami */
+    padding: 10px; /* Margines wewnętrzny */
+    box-sizing: border-box; 
+		 
+		}
+		
+	.logotekst{
+	 color: white;
+	 font-family: sans-serif;
+	 font-style: bold;
+	 font-size: 50px;
+	 margin: 20px;
+	}
+	.space{
+		flex-grow: 1;
+	}
+	.menu{
+		display: none; 
+		width: 97.48vw;
+	font-family: sans-serif;
+    
+		margin-top: 65px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: absolute;
+            top: 50px; /* Adjust as needed */
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			font-size: 0.1m;
+		background-color: 08325A;
+		border: none;
+	}
+	.source{
+		color: white;
+		text-decoration: none;
+	}
+	img {
+		height: 50px;
+		border-radius: 4px;
+	}
+
+	.countrydiv {
+		margin: 20px 0;
+	}
+	.alldivs {
+		display: flex;
+		flex-wrap: wrap; /* Zapobiega problemom z przestrzenią */
+		gap: 20px; /* Odstępy między elementami */
+		margin: 20px 0;
+	}
+	.tekstdiv {
+		flex: 1;
+		min-width: 300px; /* Minimalna szerokość */
+		padding: 10px;
+	}
+	.tekstindiv, 
+	.tekstindiv1 {
+		margin: 9px 0;
+		font-size: 19px;
+		color: #515151;
+		word-break: break-word;
+	}
+	.erasmusimg {
+
+		width: 422px;
+		height: 292px;
+		border-radius: 4px;
+	}
+	.footer{
+		width: 101vw;
+		height: 9vh;
+		margin-left: -10;
+		margin-bottom: -10;
+		place-items: center; 
+		background-color: #062645;
+
+		display: flex;
+  	justify-content: center; /* Center horizontally */
+  align-items: center;  
+	}
+	.addictionalspace {
+		height: 200px;
+	}
+	@media (max-width: 700px) {
+		.menudiv {
+			width: 95.92vw;
+		}
+		.logotekst{
+			font-size: 20px;
+		}
+		h2{
+			font-size: 12px;
+		}
+		.logoimag{
+			width: 50px;
+			height: 29px;
+
+	
+		}
+		.source{
+			font-size: 12px;	
+		}
+		.tekstindiv{
+
+			width: 82vw;
+			font-size: 10.2px;
+		}
+		.menu{
+			right: 0.2%;
+			width: 95.92vw;
+			margin-right: 9px;
+		}
+		.tekstindiv1{
+			font-size: 10.2px;
+			width: 422px;
+		}
+		.tekstindiv2{
+			font-size: 12.2px;
+			width: 222px;
+		}
+		.erasmusimg{
+			width: 200px;
+		height: 122px;
+		border-radius: 4px;
+		}
+		h1{ 
+			font-size: 22px;
+			margin-left: 4px;
+		}
+		.tekstdiv{
+			width: 400px;			
+		}
+		#project{
+			width: 70%;
+		}
+		#projecttitle{
+			font-size: 20px;
+		}
+	}
+	.footera{
+		padding-bottom: 4.5vw;
+	}
+  
+   
+	.menudivs{
+		background-color: #08325A;
+    width: 101vw;
+    height: 120.2px !important;
+    top: 0;
+    display: flex;
+    left: 0;
+    z-index: 1000; /* Adjust the value as needed */
+	margin-top: -10;
+	margin-left: -10;
+	}
+	.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+		font-size: auto;
+	}
+	.logoimag1{
+		margin-left: 1vw;
+		margin-top: 25px;
+		height: 40px;
+	}
+	.space1{
+		width: 65.2vw;
+	}
+	.menubutn1{
+		margin-left: 100px;
+		
+	}
+	
+	.menu, .menu1 {
+		display: none;
+		font-family: sans-serif;
+		width: 100vw;
+		background-color: #08325A;
+		border: none;
+		padding: 10px;
+		position: absolute;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		margin: -9px;
+	  }
+
+	.source1{
+		text-decoration: none;
+		color: white;
+	}
+	@media (max-width: 700px) {
+		.logotekst1{
+			margin-top: 40px;
+			font-size: 19.2px;
+		}
+		.logoimag1{
+			height: 22px;
+			margin-top: 42px;
+		}
+		.space1{
+			width: 25.2vw;
+		}
+		.footere{
+			margin: auto;
+			text-decoration: none;
+ 			color: aliceblue;
+			padding: 10px;
+
+			font-size: 2.9vw;
+		}
+		
+	}
+	.footer {
+  width: 100.9vw;
+  height: auto + 5vw;
+  background-color: #062645;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+.menudivs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #08325A;
+	padding: 10px;
+	color: white;
+	font-family: 'Segoe UI', sans-serif;
+	min-height: 20vh;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 100vw;
+}
+
+.logoimag1 {
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.logotekst1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+}
+
+#menubutn1 {
+	background-color: #ffffff;
+	color: #08325A;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-right: 40px;
+}
+
+#menubutn1:hover {
+	background-color: #e0e0e0;
+}
+
+.space1 {
+	flex: 1;
+}
+
+/* RESPONSYWNOŚĆ DLA MAŁYCH EKRANÓW */
+@media (max-width: 700px) {
+	.logotekst1{
+		margin-left: 20px;
+	}
+	.logoimag1 {
+		margin-bottom: 29px;
+		margin-right: 29px;
+	}
+}
+@media (min-width: 1700px){
+	#menubutn1 {
+		background-color: #ffffff;
+		color: #08325A;
+		border: none;
+		padding: 10px 20px;
+		font-size: 40px;
+		font-weight: 600;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		margin-right: 40px;
+	}
+	.logoimag1 {
+		height: 100px;
+		margin-bottom: 10px;
+		margin-left: 12vw;
+	  }
+	  .logotekst, .logotekst1 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 90px;
+        margin: 20px;
+		width: 19vh;
+        margin-left: 4vw;
+      }
+	  .footer{
+		font-size: 2rem;
+	  }
+	  .menu1{
+	   margin: -9px;
+	  }
+	  .tekstindiv{
+		font-size: 2rem;
+	  }
+	  .erasmusimg{
+		height: 29vh;
+		width: auto;
+	  }
+	  .source1 {
+		
+		font-size: 2rem;
+	  }
+
+}
+  
