@@ -186,8 +186,7 @@
 		color: white;
 		margin-left: 22.2px;
 		margin-top: 25px;
-	
-		font-size: auto;
+		    font-size: 24px;
 	}
 	.logoimag1{
 		margin-left: 1vw;
@@ -218,7 +217,7 @@
 	@media (max-width: 700px) {
 		.logotekst1{
 			margin-top: 40px;
-			font-size: 19.2px;
+			font-size: 20px;
 			margin-left: 20px;
 		}
 		.logoimag1{
