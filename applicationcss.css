@@ -183,12 +183,7 @@
 	
   
    
-	.logotekst1{
-		color: white;
-		margin-left: 22.2px;
-		margin-top: 25px;
-		font-size: auto;
-	}
+	
 	.logoimag1{
 		margin-left: 1vw;
 		margin-top: 25px;
@@ -260,7 +255,12 @@
 		margin-left: 100px;
 		
 	}
-	
+	.logotekst1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+}
 	.menu, .menu1 {
 		display: none;
 		font-family: sans-serif;
@@ -327,10 +327,16 @@
 		}
 	
 	}
+.logotekst1{
+		color: white;
+		margin-left: 22.2px;
+		margin-top: 25px;
+		font-size: 24px;
+	}
 	@media (max-width: 800px) {
 		.logotekst1{
 			margin-top: 40px;
-			font-size: 19.2px;
+			font-size: 20px;
 		}
 		.email{
 			margin-top: 40vh;
@@ -341,6 +347,7 @@
 		}
 	
 	}
+
 
 
 
@@ -364,12 +371,7 @@
 }
 
 
-.logotekst1 {
-	font-size: 24px;
-	font-weight: bold;
-	margin: 0;
-	margin-left: 40px;
-}
+
 
 #menubutn1 {
 	background-color: #ffffff;
