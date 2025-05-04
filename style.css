@@ -55,7 +55,7 @@
   
   #projecttitle, #projecttitle1 {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +85,7 @@ left: 0;
 	background-color: #08325A;
 	padding: 10px;
 	color: white;
-	font-family: 'Segoe UI', sans-serif;
+	font-family: Verdana, sans-serif;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	width: 100vw;
 }
@@ -111,7 +111,7 @@ left: 0;
   
   .menu, .menu1 {
     display: none;
-    font-family: sans-serif;
+   font-family: Verdana, sans-serif;
     width: 100vw;
     background-color: #08325A;
     border: none;
@@ -140,7 +140,7 @@ left: 0;
   }
   
   .tekstindiv2 {
-    font-family: cursive;
+   font-family: Verdana, sans-serif;
     width: 59%;
   }
   
@@ -172,12 +172,12 @@ left: 0;
   
   .table {
     display: flex;
-    font-family: cursive;
+    font-family: Verdana, sans-serif;font-family: cursive;
   }
   
   .finishtable, .germantable {
     min-width: 70%;
-    font-family: cursive;
+    font-family: Verdana, sans-serif;
   }
   
   .finishtable {
@@ -320,7 +320,7 @@ left: 0;
       }
     .logotekst, .logotekst1 {
         color: white;
-        font-family: sans-serif;
+        font-family: Verdana, sans-serif;
         font-weight: bold;
         font-size: 90px;
         margin: 20px;
