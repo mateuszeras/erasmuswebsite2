@@ -213,10 +213,8 @@ button{
 		color: white;
 	}
 	@media (max-width: 700px) {
-		.logotekst1{
-			margin-top: 40px;
-			font-size: 19.2px;
-		}
+		        font-size: 20px;
+			margin-left: 20px;
 		.logoimag1{
 			height: 22px;
 			margin-top: 42px;
