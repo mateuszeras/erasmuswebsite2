@@ -172,7 +172,7 @@ left: 0;
   
   .table {
     display: flex;
-    font-family: Verdana, sans-serif;font-family: cursive;
+    font-family: Verdana, sans-serif;
   }
   
   .finishtable, .germantable {
