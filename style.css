@@ -78,7 +78,7 @@ display: flex;
 left: 0;
 }
   .menudivs {
-   height: 20vh;
+   min-height: 20vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
