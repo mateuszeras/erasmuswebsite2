@@ -122,6 +122,12 @@
 	  margin-left: 9px;
 	}
 	@media (max-width: 700px) {
+		h6{
+			margin-top: 20px;
+		}
+		.alldivs{
+			margin-bottom: 90px;
+		}
 		.menudiv {
 			width: 95.92vw;
 		}
