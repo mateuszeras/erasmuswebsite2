@@ -107,7 +107,7 @@
 	    height: 200px;
 	}
 	*{
-	 font-family: 	Verdana;
+	 font-family: 	Trebuchet, sans-serif;
 	}
 	@media (max-width: 800px) {
 		.menudiv {
@@ -182,10 +182,8 @@
 	
   
    
-	
 	.logoimag1{
 		margin-left: 1vw;
-		margin-top: 25px;
 		height: 40px;
 	}
 	.space1{
