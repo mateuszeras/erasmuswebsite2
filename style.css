@@ -2,7 +2,7 @@
 /* Poprawiony CSS */
 
 * {
-    font-family: Verdana, sans-serif;
+    font-family: Trebuchet, sans-serif;
   }
   
   body {
@@ -140,10 +140,8 @@ left: 0;
   }
   
   .tekstindiv2 {
-   font-family: Verdana, sans-serif;
+   font-family: Trebuchet, sans-serif;
     width: 59%;
-    font-size: 11px;
-    margin-left: 9px;
   }
   
   .erasmusimg, .erasmusimg1, .erasmusimg2, .erasmusimg3, .erasmusimg44 {
@@ -180,7 +178,7 @@ left: 0;
   .finishtable, .germantable {
     min-width: 70%;
     font-family: Verdana, sans-serif;
-    font-size: 11.9px;
+	font-size: 11.9px;
     margin-left: 9px;
   }
   
@@ -305,12 +303,6 @@ left: 0;
     .menudivs{
         min-height: 20vh;
     }
-	  .finishtable, .germantable {
-    min-width: 70%;
-    font-family: Verdana, sans-serif;
-		  font-size: 2rem;
-    margin-left: 9px;
-  }
     #menubutn1 {
         background-color: #ffffff;
         color: #08325A;
@@ -355,10 +347,14 @@ left: 0;
     width: 80vw;
     max-width: 4000px;
   }
-	  
   .survey {
     font-size: 3rem;
   }
+  .germantable, .finishtable {
+      width: 1522px;
+      height: auto;
+	  font-size: 2rem;
+    }
   h2 {
     font-size: 3rem;
   }
