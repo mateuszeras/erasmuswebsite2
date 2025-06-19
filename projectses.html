@@ -13,19 +13,20 @@
 </div>
 <center>
 	<div class="menu1" id="menu">
-	<center>
-	   <a href="indexes.html" class="source1">Inicio</a>
-	   <br>
-	   <br>
-	   <a href="whatiserasmuses.html" class="source1">Proyectos</a>
-	   <br>
-	   <br>
-	   <a href="applicationes.html" class="source1">Solicitud</a> 
-	   <br>
-	   <br>
-	   <a href="partnerschoolses.html" class="source1">Escuelas asociadas</a>
-	</center>
-</div>
+		<center>
+   <a href="indexes.html" class="source1">Inicio</a>
+   <br>
+   <br>
+   <a href="projectses.html" class="source1">Nuestros proyectos</a>
+   <br>
+   <br>
+   <a href="partnerschoolses.html" class="source1">Escuelas asociadas</a>
+   <br>
+   <br>
+   <a href="applicationes.html" class="source1">Solicitud</a> 
+</center>
+	   
+   </div>
 </center>
 
 
@@ -33,20 +34,48 @@
 	<img src="davincischool.png" class="slogan">
 	</center>
 		<div class="backgrounder" style="flex: 1;">
-	<br>
-	<div id="project" class="projectbutton" onclick="changeSize()">
-		<h2 style="margin-left: 9px;" id="projecttitle">Proyecto "No sin mi teléfono" +</h2>
-	</div>
-	<div style="margin-left: 20px;" id="projectcontent"></div>
-	<br>
-	<div id="project1" class="projectbutton1" onclick="Change()">
-		<h2 style="margin-left: 9px;" id="projecttitle1">Intercambio Erasmus en Finlandia +</h2>
-	</div>
-	<div style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;" id="projectcontent1">
-	</div>
-</div>
+		<br>
+		<div id="project" class="projectbutton" onclick="schoolYear()">
+			<h2 style="margin-left: 9px;" id="projecttitle">Curso escolar 2024-2025</h2>
+			
+		</div>
+		<div id="countries" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;">
+			
+		</div>
+	
 	<script>
-		document.getElementById("projectcontent").innerHTML = "";
+		document.getElementById("countries").innerHTML = "";
+		function schoolYear(){
+			let b = document.getElementById("countries").innerHTML;
+			if(b == ""){
+				console.log("Hey")
+				document.getElementById("countries").innerHTML = `<div id="project" class="projectbutton" onclick=" Change()" style="margin-top: 2vh;">
+				<h2 style="margin-left: 9px;" id="projecttitle">Finlandia</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent">
+		
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent1">
+		
+			</div>
+			<div id="project" class="projectbutton" onclick="schoolyear()" style="">
+				<h2 style="margin-left: 9px;" id="projecttitle">España</h2>
+				
+			</div>`
+			document.getElementById("projectcontent").innerHTML = "";
+				document.getElementById("projectcontent1").innerHTML = "";
+
+			
+			}
+			else{
+				document.getElementById("countries").innerHTML = "";
+			}
+		}
+
+
+
+		
 		function Menu(){
 		const menu = document.getElementById("menu");
 			if (menu.style.display === "block") {
@@ -60,16 +89,15 @@
 			backgrounder.style.height = `${window.height}px`;
 			let a = document.getElementById("projectcontent").innerHTML;
 			if(a == ""){
-				document.getElementById("projecttitle").innerText = 'Proyecto "No sin mi teléfono" -' ;
 				Larger()
 			}
 			else{
 				document.getElementById("projectcontent").innerHTML = "";
-				document.getElementById("projecttitle").innerText = 'Proyecto "No sin mi teléfono" +';
 			}
 		}
         function Larger(){
 			document.getElementById("projectcontent").innerHTML = `
+			<h1>Proyecto:No sin mi smartphone</h1>
 	<h2>Hicimos una encuesta en nuestra escuela sobre el uso de los teléfonos inteligentes, aquí puedes ver nuestros resultados:</h2>
 <div class="alldivs">
   <h6 class="tekstindiv1">
@@ -179,24 +207,32 @@ Conclusión de la encuesta
 La mayoría de los adolescentes de hoy en día están de acuerdo en que los teléfonos y dispositivos tecnológicos no deberían entregarse fácilmente a los niños, ya que aún están en una fase de desarrollo y el tiempo que pasan con los teléfonos causa una adicción para la mayoría. Los adolescentes expresaron que la ausencia de dispositivos tecnológicos les trae felicidad y se sienten más relajados que ansiosos o estresados. Eso nos muestra que, en el día a día, los teléfonos y dispositivos tecnológicos pueden agotarnos. Entre los adolescentes, los teléfonos se usan principalmente para comunicarse y para el uso de redes sociales.
 </h6>
 </div>
+
+
+	
+
+
+
 			`;
 		}
 
 
 		function Change(){
+			
 			let a = document.getElementById("projectcontent1").innerHTML;
 			if(a == ""){
-				document.getElementById("projecttitle1").innerText = 'Intercambio Erasmus en Finlandia -';
 				ChangeHTML()
+				changeSize();
 			}
 			else{
+				document.getElementById("projectcontent").innerHTML = "";
 				document.getElementById("projectcontent1").innerHTML = "";
-				document.getElementById("projecttitle1").innerText = 'Intercambio Erasmus en Finlandia +';
 			}
 		}
 
 		function ChangeHTML(){
 		document.getElementById("projectcontent1").innerHTML = `
+		    <h1>Proyecto:Nuestra futura escuela</h1>
 			<img src="eras.jpeg" class="finlandpictures" alt="">
 <img src="eras1.jpg" class="finlandpictures" alt="">
 <img src="finland1.jpg" class="finlandpictures1" alt="">
@@ -249,7 +285,13 @@ La mayoría de los adolescentes de hoy en día están de acuerdo en que los tel�
   <br><br>
   ¡Gracias Erasmus+ por este tiempo maravilloso!
 </div>
+
+
+		"
+		</div>
 		`
+
+		
 		}
 	</script>
 	</div>
@@ -264,5 +306,4 @@ La mayoría de los adolescentes de hoy en día están de acuerdo en que los tel�
 </center>
 </body>
 </html>
-
 
