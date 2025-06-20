@@ -43,7 +43,7 @@
 		<div id="countries" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;">
 			
 		</div>
-	
+
 	<script>
 		document.getElementById("countries").innerHTML = "";
 		function schoolYear(){
@@ -60,12 +60,17 @@
 			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent1">
 		
 			</div>
-			<div id="project" class="projectbutton" onclick="schoolyear()" style="">
+			<div id="project" class="projectbutton" onclick="largespain()" style="">
 				<h2 style="margin-left: 9px;" id="projecttitle">Spain</h2>
 				
-			</div>`
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent2">
+		
+			</div>
+			`
 			document.getElementById("projectcontent").innerHTML = "";
-				document.getElementById("projectcontent1").innerHTML = "";
+		    document.getElementById("projectcontent1").innerHTML = "";
+			document.getElementById("projectcontent2").innerHTML = "";
 
 			
 			}
@@ -76,7 +81,35 @@
 
 
 
-		
+		function largespain(){
+			let a = document.getElementById("projectcontent2").innerHTML;
+			if(a == ""){
+				document.getElementById("projectcontent2").innerHTML = `
+				<h1>Project:"International schoolgarden"</h1>
+				<br>
+					  <div class="gallery">
+    				<img src="image0.jpeg" alt="Zdjęcie 1">
+					<img src="image1.jpeg" alt="Zdjęcie 2">
+					<img src="image2.jpeg" alt="Zdjęcie 3">
+					<img src="image3.jpeg" alt="Zdjęcie 4">
+					<img src="image4.jpeg" alt="Zdjęcie 5">
+					<img src="image6.jpeg" alt="Zdjęcie 6">
+					<img src="image7.jpeg" alt="Zdjęcie 7">
+					<img src="image8.jpeg" alt="Zdjęcie 8">
+					<img src="image9.jpeg" alt="Zdjęcie 9">
+					<img src="image10.jpeg" alt="Zdjęcie 10">
+					<img src="image11.jpeg" alt="Zdjęcie 11">
+					<img src="image12.jpeg" alt="Zdjęcie 12">
+					<img src="image13.jpeg" alt="Zdjęcie 13">
+					<img src="image14.jpeg" alt="Zdjęcie 14">
+     				</div>
+				`;
+			}
+			else{
+				document.getElementById("projectcontent2").innerHTML = "";
+			}
+
+		}
 		function Menu(){
 		const menu = document.getElementById("menu");
 			if (menu.style.display === "block") {
