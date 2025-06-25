@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
   }
+h2, h3, h4, h5, h6{
+    font-weight: unset;
+  }
    body {
     height: 100%;
     display: flex;
@@ -32,6 +35,7 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+
   #menubutn1 {
 	background-color: #ffffff;
 	color: #08325A;
