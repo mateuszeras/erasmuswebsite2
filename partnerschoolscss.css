@@ -62,7 +62,9 @@ button{
 		height: 50px;
 		border-radius: 4px;
 	}
-
+	h2, h3, h4, h5, h6{
+    font-weight: unset;
+  }
 	.countrydiv {
 		margin: 20px 0;
 	}
