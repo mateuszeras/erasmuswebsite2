@@ -1,105 +1,346 @@
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
- <link rel="stylesheet" href="partnerschoolscss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erasmus+ Partner Schools</title>
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- 1. COLOR & FONT VARIABLES --- */
+        :root {
+            --primary-color: #08325A; /* Deep Blue */
+            --accent-color: #FFCC00; /* Gold Yellow */
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+        }
+
+        /* --- 2. HEADER & MENU STYLES (Matching the template) --- */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text { font-size: 1.5rem; font-weight: 700; }
+        .logo-img { height: 50px; width: auto; background: white; padding: 2px; border-radius: 4px; }
+
+        .menu-btn {
+            background: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .menu-btn:hover { background: var(--white); color: var(--primary-color); }
+
+        /* Navigation Overlay */
+        #nav-menu {
+            display: none; /* Controlled by JS/Active class for mobile */
+            background-color: #062645;
+            position: absolute; /* Changed from fixed to absolute to flow below header */
+            top: 72px; /* Adjust based on header height */
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        #nav-menu.active {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #nav-menu a {
+            display: block;
+            padding: 15px;
+            color: var(--white);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-weight: 600;
+        }
+        #nav-menu a:last-child { border-bottom: none; }
+        #nav-menu a:hover, #nav-menu a.active-link { background: rgba(255,255,255,0.1); color: var(--accent-color); }
+
+        /* --- 3. MAIN CONTENT STYLES --- */
+        main {
+            flex: 1;
+            padding: 40px 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 10px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Country Sections --- */
+        .country-section {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            border-left: 8px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+        .country-section:nth-child(3) {
+            /* Alternate color for Finland section */
+            border-left: 8px solid var(--accent-color);
+        }
+
+        .country-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .content-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .school-info h3 {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .school-text {
+            line-height: 1.7;
+            color: #555;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .school-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Grid for Images/Text in Finland section */
+        .finland-content {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        .finland-images {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Image Sources */
+        .image-sources {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* --- 4. FOOTER STYLES --- */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer-links a {
+            color: var(--white);
+            margin: 0 15px;
+            text-decoration: none;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+
+        /* --- MEDIA QUERIES --- */
+        @media (min-width: 768px) {
+            .logo-text { font-size: 1.8rem; }
+            .page-title { font-size: 3rem; }
+            
+            .content-layout {
+                flex-direction: row;
+            }
+            .content-layout .image-col {
+                width: 35%;
+                flex-shrink: 0;
+            }
+            .content-layout .text-col {
+                width: 65%;
+            }
+
+            .finland-content {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    </style>
 </head>
 <body>
-	<div class="menudivs">
-		<h1 class="logotekst1">Erasmus+</h1>
-		<img class="logoimag1" src="logo.png">
-		<div class="space1"></div>
-		<button id="menubutn1" onclick="Menu()">Menu</button>
-	</div>
-	<center>
-		<div class="menu1" id="menu">
-			<center>
-			   <a href="index.html" class="source1">Home</a>
-		   <br>
-		   <br>
-		   <a href="projects.html" class="source1">Our projects</a>
-		   <br>
-		   <br>
-		   <a href="partnerschools.html" class="source1">Partner schools</a>
-		   <br>
-		   <br>
-		   <a href="application.html" class="source1">Application</a> 
-	   
-		</center>
-		   
-	   </div>
-	</center>
-	<h1>PARTNER SCHOOLS</h1>
-	<div class="countrydiv">
-		<h2>Spain-Moron de la Frontera-Colegio Salesiano San Juan Bosco</h2>
-		<img class="erasmusimg" src="schoolinspain.png">
-		<div class="tekstdiv">
-		<h6 class="tekstindiv">
-	    One from the three partner schools is the Colegio Salesiano San Juan Bosco. In Moron de la Frontera near Sevilla in Spain. It's a private school. 
-		The students from the 9th grade have the chance to visit Spain. The students live with host families for one week and the project language is English. 
-		The project is suported by Erasmus+. The students work on different projects every year.  In 2022 the projects were "A clean world" and "2022-today". In that same year, we received a climate award from Potsdam for the project "A clean world". 
 
-		</h6>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo-text">Erasmus+</h1>
+            <!-- Restored original image concept -->
+            <img src="logo.png" alt="Erasmus Logo" class="logo-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg'">
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">Menu</button>
+    </header>
 
-		</div>
+    <!-- Navigation Overlay -->
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="partnerschools.html" class="active-link">Partner Schools</a>
+        <a href="application.html">Application</a>
+    </nav>
 
-		
+    <!-- Main Content -->
+    <main>
+        <h1 class="page-title">PARTNER SCHOOLS</h1>
 
-	</div>
-	<br>
-	<div class="countrydiv">
-		<h2>Finland-Kalajoki-Merenojan uusi yhtenäiskoulu</h2>
-	
-		<img class="erasmusimg" src="finland1.jpg">
-		<img class="erasmusimg" src="finland2.jpeg">
-			<div class="alltekst">
-				<div class="tekstdiv">
-				<h6 class="tekstindiv">
-			 In 2024, the first exchange with the partner school from the city of Kalajoki in Finland will take place. This year, eleven Finnish students came to Germany, and the project is "Not Without My Phone", the project language is English. In January, the German student will visit Kalajoki. The student exchange will also be supported by Erasmus+.
-					
-				</h6>
-				<br>
-				<br>
-				<h6 class="tekstindiv1">
-					About the school:
-				</h6>
-					<h6 class="tekstindiv">
-						   The school is quite small, with about 30 teachers and 250 students. A quarter of these students come from outside Kalajoki. The school is a "sock school", meaning the students do not wear shoes inside. Lessons are 1 hour and 30 minutes long, with a short break in between. Students can choose a specific track that includes more lessons in a particular subject. For example, students in the visual arts track have more art lessons. In this school, students have an "exam week" during which they focus solely on exams without any other lessons.
-				</h6>
-				</div>
-	
-			
-				</div>
-			
-			</div>
-			
-	</div>
-	
-	<br>
+        <!-- Spain Section -->
+        <section class="country-section">
+            <h2>Spain: Moron de la Frontera - Colegio Salesiano San Juan Bosco</h2>
+            
+            <div class="content-layout">
+                <!-- Image Column -->
+                <div class="image-col">
+                    <img class="school-image" 
+                         src="https://placehold.co/600x400/08325A/ffffff?text=School+in+Moron+de+la+Frontera" 
+                         alt="Colegio Salesiano San Juan Bosco">
+                </div>
+                
+                <!-- Text Column -->
+                <div class="text-col school-info">
+                    <p class="school-text">
+                        One from the three partner schools is the Colegio Salesiano San Juan Bosco. In Moron de la Frontera near Sevilla in Spain. It's a private school. 
+                        The students from the 9th grade have the chance to visit Spain. The students live with host families for one week and the project language is English. 
+                        The project is supported by Erasmus+. The students work on different projects every year. In 2022 the projects were "A clean world" and "2022-today". 
+                        In that same year, we received a climate award from Potsdam for the project "A clean world".
+                    </p>
+                </div>
+            </div>
+        </section>
 
-	<div class="addictionalspace"></div>
-	<br>
-	<h6>Bilder:  https://maps.app.goo.gl/WtBUNeJyyygNoeaeA ,https://maps.app.goo.gl/ViKXDNW1jEvh7YgB8</h6>	
-	<script>
-	
-		function Menu(){
-		const menu = document.getElementById("menu");
-			if (menu.style.display === "block") {
-                menu.style.display = "none"; // Hide menu
+        <!-- Finland Section -->
+        <section class="country-section">
+            <h2>Finland: Kalajoki - Merenojan uusi yhtenäiskoulu</h2>
+            
+            <div class="finland-content">
+                
+                <!-- Image Column (Left on Desktop) -->
+                <div class="finland-images">
+                    <img class="school-image" 
+                         src="https://placehold.co/600x300/FFCC00/08325A?text=Kalajoki+School+Exterior" 
+                         alt="Merenojan uusi yhtenäiskoulu exterior">
+                    <img class="school-image" 
+                         src="https://placehold.co/600x300/FFCC00/08325A?text=School+Interior+Finland" 
+                         alt="Merenojan uusi yhtenäiskoulu interior">
+                </div>
+                
+                <!-- Text Column (Right on Desktop) -->
+                <div class="school-info">
+                    <p class="school-text">
+                        In 2024, the first exchange with the partner school from the city of Kalajoki in Finland will take place. This year, eleven Finnish students came to Germany, and the project is "Not Without My Phone", the project language is English. In January, the German student will visit Kalajoki. The student exchange will also be supported by Erasmus+.
+                    </p>
+
+                    <h3 class="font-semibold mt-6">About the school:</h3>
+                    <p class="school-text">
+                        The school is quite small, with about 30 teachers and 250 students. A quarter of these students come from outside Kalajoki. The school is a "sock school", meaning the students do not wear shoes inside. Lessons are 1 hour and 30 minutes long, with a short break in between. Students can choose a specific track that includes more lessons in a particular subject. For example, students in the visual arts track have more art lessons. In this school, students have an "exam week" during which they focus solely on exams without any other lessons.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Image Credits -->
+        <p class="image-sources">
+            Image Sources: Original references removed (for security). Placeholder images are used for demonstration.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.davinci-gesamtschule.de/impressum/index.php" target="_blank">Impressum</a>
+            <a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" target="_blank">Datenschutz</a>
+            <a href="#" target="_blank">ESPAÑOL</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("nav-menu");
+            const btn = document.querySelector(".menu-btn");
+            
+            menu.classList.toggle("active");
+            
+            // Optional: Change button text
+            if (menu.classList.contains("active")) {
+                btn.textContent = "Close";
             } else {
-                menu.style.display = "block"; // Show menu
+                btn.textContent = "Menu";
             }
-		}
-	</script>
-	<center>
-		<footer class="footer">
-			<div class="footere">
-				<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue; ">Impressum</a>
-			<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
-			</div>
-			
-		  </footer>
-	</center>
-
+        }
+    </script>
 </body>
 </html>
-
