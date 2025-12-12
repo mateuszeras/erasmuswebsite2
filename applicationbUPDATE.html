@@ -1,0 +1,94 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 	<link rel="stylesheet" href="applicationcss.css">
+</head>
+<body>
+	<div class="menudivs">
+		<h1 class="logotekst1">Erasmus+</h1>
+		<img class="logoimag1" src="logo.png">
+		<div class="space1"></div>
+		<button id="menubutn1" onclick="Menu()">Menu</button>
+	</div>
+	<center>
+		<div class="menu1" id="menu">
+			<center>
+			   <a href="index.html" class="source1">Home</a>
+		   <br>
+		   <br>
+		   <a href="projects.html" class="source1">Our projects</a>
+		   <br>
+		   <br>
+		   <a href="partnerschools.html" class="source1">Partner schools</a>
+		   <br>
+		   <br>
+		   <a href="application.html" class="source1">Application</a> 
+			</center>
+		   
+	   </div>
+	</center>
+	<div class="content">
+	<center>
+		<h1>APPLICATION</h1>
+	<img class="steckbrief" src="steckbrief.png">
+	<br>
+	<br>
+	<a href="steckbrief.pdf">
+		<button  class="button">Steckbrief PDF</button>
+	</a>
+	
+	<br>
+</center>
+<center>
+	<div class="tekstdiv">
+	
+		<h6 class="tekstindiv">
+			If you want to join the Erasmus project you need to write down your motivation and fill your profile. You can find the profile sheet on the website. The motivation sheet has to be written in English and must be more or less one page. Don't forget to hand it to the Erasmus team in time. You don't need anything else. If you have more questions ask the Erasmus team in our school or write them.
+		 </h6>
+	
+	
+
+	 <br>
+	 <br>
+	
+	</div>
+	
+</center>
+	</div>
+	<center>
+		<div class="email">
+			Contacts:
+			<button onclick="ShowEmailAddress()" class="button">click to show email addresses</button>
+			
+			 <h6 class="tekstindiv1" id="htext">
+			</h6>
+		</div>
+		</center>
+	<div class="addictionalspace"></div>
+	
+	<br>
+	<script src="script.js"></script>
+	<script>
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+	</script>
+
+
+<center>
+	<footer class="footer">
+		<div class="footere">
+			<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue; ">Impressum</a>
+		<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
+		</div>
+		
+	  </footer>
+</center>
+</body>
+</html>
+
