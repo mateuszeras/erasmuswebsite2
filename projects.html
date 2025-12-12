@@ -43,9 +43,66 @@
 		<div id="countries" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;">
 			
 		</div>
+		<div id="project" class="projectbutton" onclick="schoolYear1()">
+			<h2 style="margin-left: 9px;" id="projecttitle">School year 2025-2026</h2>
+				
+		</div>
+		<div id="countries1" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;">
+			
+		</div>
 
 	<script>
 		document.getElementById("countries").innerHTML = "";
+		function schoolYear1(){
+			let b = document.getElementById("countries1").innerHTML;
+			if(b == ""){
+				console.log("Hey")
+				document.getElementById("countries").innerHTML = `<div id="project" class="projectbutton" onclick=" Change1()" style="margin-top: 2vh;">
+				<h2 style="margin-left: 9px;" id="projecttitle">Finland</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent01">
+		
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent11">
+		
+			</div>
+			<div id="project" class="projectbutton" onclick="largespain()" style="">
+				<h2 style="margin-left: 9px;" id="projecttitle">Spain</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent21">
+		
+			</div>
+			`
+			document.getElementById("projectcontent01").innerHTML = "";
+		    document.getElementById("projectcontent11").innerHTML = "";
+			document.getElementById("projectcontent21").innerHTML = "";
+		}
+			function Change1(){
+			
+			let a = document.getElementById("projectcontent01").innerHTML;
+			if(a == ""){
+				ChangeHTML1()
+			}
+			else{
+				document.getElementById("projectcontent11").innerHTML = "";
+				document.getElementById("projectcontent22").innerHTML = "";
+			}
+		}
+		function ChangeHTML1(){
+			document.getElementById("projectcontent01").innerHTML = `
+				Our project started on Sunday, 21st of September, when the finnish and norwegian students arrived at the Berlin airport.
+On the next day, on Monday, we all met in our project room and played a few icebreaker games to get to know each other better and we showed our guests our school. Then our teachers described the concept of the "Moving School Project" to us and explained the plan for the week. After the short break we all met again in the city centre for a tour around Potsdam. We were divided into 4 groups and each group was supposed to do the tour by themselves with help of the Actionbound-App. After each group finished their "Sightseeing-Tour" we went for a dragonboattour on the Havel. Again we were divided into 2 groups and each group got their instructor. After some practice we raced each other for around 150m. It was a really interesting but tiring experience. So most of us went home to rest afterwards.
+On Tuesday we met at school at 8:15 and our exchange students joined us in our classes. It was really fun experience for our finnish and norwegian friends to peek into a regular german school routine. After the classes we did a little experiment to check how are we feeling and how well is our brain working after a whole day of sitting and learning. We were given a math problem we were supposed to solve. Only few students manage to do that since the rest of us was too tired after the whole day.
+On Wednesday we continued with our experiment but this time we were supposed to have a very active day. We started with some dancing in the morning, then we had a little french class connected with some movement to help us remember the vocabulary better. We also did a little yoga to relax at the end. After a short breakfast break we came back to our project room and tried to solve another math problem. This time more people were able to do that. We were also given a task to design our "perfect moving school day". For that we were divided into small groups again and we presented our results at the end. The last 90 minutes of the school day we spent outside doing various sport activities like fitness or cheerleading.
+On Thursday our exchange students went to Berlin. They visited multiple famous and historical monuments, including the holocaust museum and the Berlin Wall. They also went shopping there, while we had to participate in our classes. Thursday was also the last day for our norwegian friends. So we organised a small farewell party for them in the afternoon.
+On Friday the norwegian students went back to Norway with their teachers and their hosts had to go back to their normal school routine.
+Meanwhile the finnish students and their german hosts had a Skate-Workshop in the morning. We had the opportunity to try our skating skills and most of the students were really good at it. After the lunch break we started working on our stand for the school festival and the texts for the homepage.
+At 4:00 PM the school festival started and we got to share our experiences and adventures. Unfortunately our finnish friends were flying home on Saturday early in the morning.
+The week past so quickly, we had so much fun and we can’t wait to visit them next year. Thanks Erasmus+ for this great opportunity!
+			`;
+		}
 		function schoolYear(){
 			let b = document.getElementById("countries").innerHTML;
 			if(b == ""){
@@ -315,7 +372,7 @@ On Monday, we stepped into the Finnish school, Lukio, and it was absolutely magi
 <br>
 <br>
  
-Am Dienstag startete der Tag mit einem Treffen von Schülern aus Italien, Brasilien, Deutschland, Finnland und anderen Ländern. Nach der Vorstellung unserer Schule haben wir über „Finnish Nightmares“ und „Deutsche Albträume“ gesprochen. „Finnish Nightmares“ Comics zeigen witzige Alltagshorrorszenen, wie Smalltalk mit Fremden oder zu nah stehende Menschen. Dazu haben wir eigene Comics zu „Deutschen Albträumen“ gestaltet und diese den „Finnish Nightmares“ gegenübergestellt.
+Am Dienstag startete der Tag mit einem Treffen von Schülern aus Italien, Brasilien, Deutschland, Finnland und anderen Ländern. Nach der Vorstellung unserer Schule haben wir über „Finnish Nightmares" und „Deutsche Albträume" gesprochen. „Finnish Nightmares" Comics zeigen witzige Alltagshorrorszenen, wie Smalltalk mit Fremden oder zu nah stehende Menschen. Dazu haben wir eigene Comics zu „Deutschen Albträumen" gestaltet und diese den „Finnish Nightmares" gegenübergestellt.
 <br>
 
  
@@ -394,4 +451,5 @@ Thank you Erasmus+ for this wonderful time!
 </center>
 </body>
 </html>
+
 
