@@ -1,0 +1,456 @@
+<html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menudivs"> 
+	<h1 class="logotekst1">Erasmus+</h1>
+	<img class="logoimag1" src="logo.png">
+	<div class="space1"></div>
+	<button id="menubutn1" onclick="Menu()">Menu</button>
+</div>
+<center>
+	<div class="menu1" id="menu">
+		<center>
+			   <a href="index.html" class="source1">Home</a>
+		   <br>
+		   <br>
+		   <a href="projects.html" class="source1">Our projects</a>
+		   <br>
+		   <br>
+		   <a href="partnerschools.html" class="source1">Partner schools</a>
+		   <br>
+		   <br>
+		   <a href="application.html" class="source1">Application</a> 
+	   
+		</center>
+	   
+   </div>
+</center>
+
+
+	<center>
+	<img src="davincischool.png" class="slogan">
+	</center>
+		<div class="backgrounder" style="flex: 1;">
+		<br>
+		<div id="project" class="projectbutton" onclick="schoolYear()">
+			<h2 style="margin-left: 9px;" id="projecttitle">School year 2024-2025</h2>
+			
+		</div>
+		<div id="countries" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;">
+			
+		</div>
+		<div id="project" class="projectbutton" onclick="schoolYearone()">
+			<h2 style="margin-left: 9px;" id="projecttitle">School year 2025-2026</h2>
+				
+		</div>
+		<div id="countries1" style="margin-left: 20px; width: 80vw; margin-bottom: 9vh;"></div>
+
+	<script>
+		document.getElementById("countries1").innerHTML = "";
+		function schoolYearone(){
+			let b = document.getElementById("countries1").innerHTML;
+			if(b == ""){
+				console.log("Hey")
+				document.getElementById("countries").innerHTML = `<div id="project" class="projectbutton" onclick=" Change1()" style="margin-top: 2vh;">
+				<h2 style="margin-left: 9px;" id="projecttitle">Finland</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent01">
+		
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent11">
+		
+			</div>
+			<div id="project" class="projectbutton" onclick="largespain()" style="">
+				<h2 style="margin-left: 9px;" id="projecttitle">Spain</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent21">
+		
+			</div>
+			`
+			document.getElementById("projectcontent01").innerHTML = "";
+		    document.getElementById("projectcontent11").innerHTML = "";
+			document.getElementById("projectcontent21").innerHTML = "";
+		}}
+			function Change1(){
+			
+			let a = document.getElementById("projectcontent01").innerHTML;
+			if(a == ""){
+				ChangeHTML1()
+			}
+			else{
+				document.getElementById("projectcontent11").innerHTML = "";
+				document.getElementById("projectcontent22").innerHTML = "";
+			}
+		}
+		function ChangeHTML1(){
+			document.getElementById("projectcontent01").innerHTML = `
+				Our project started on Sunday, 21st of September, when the finnish and norwegian students arrived at the Berlin airport.
+On the next day, on Monday, we all met in our project room and played a few icebreaker games to get to know each other better and we showed our guests our school. Then our teachers described the concept of the "Moving School Project" to us and explained the plan for the week. After the short break we all met again in the city centre for a tour around Potsdam. We were divided into 4 groups and each group was supposed to do the tour by themselves with help of the Actionbound-App. After each group finished their "Sightseeing-Tour" we went for a dragonboattour on the Havel. Again we were divided into 2 groups and each group got their instructor. After some practice we raced each other for around 150m. It was a really interesting but tiring experience. So most of us went home to rest afterwards.
+On Tuesday we met at school at 8:15 and our exchange students joined us in our classes. It was really fun experience for our finnish and norwegian friends to peek into a regular german school routine. After the classes we did a little experiment to check how are we feeling and how well is our brain working after a whole day of sitting and learning. We were given a math problem we were supposed to solve. Only few students manage to do that since the rest of us was too tired after the whole day.
+On Wednesday we continued with our experiment but this time we were supposed to have a very active day. We started with some dancing in the morning, then we had a little french class connected with some movement to help us remember the vocabulary better. We also did a little yoga to relax at the end. After a short breakfast break we came back to our project room and tried to solve another math problem. This time more people were able to do that. We were also given a task to design our "perfect moving school day". For that we were divided into small groups again and we presented our results at the end. The last 90 minutes of the school day we spent outside doing various sport activities like fitness or cheerleading.
+On Thursday our exchange students went to Berlin. They visited multiple famous and historical monuments, including the holocaust museum and the Berlin Wall. They also went shopping there, while we had to participate in our classes. Thursday was also the last day for our norwegian friends. So we organised a small farewell party for them in the afternoon.
+On Friday the norwegian students went back to Norway with their teachers and their hosts had to go back to their normal school routine.
+Meanwhile the finnish students and their german hosts had a Skate-Workshop in the morning. We had the opportunity to try our skating skills and most of the students were really good at it. After the lunch break we started working on our stand for the school festival and the texts for the homepage.
+At 4:00 PM the school festival started and we got to share our experiences and adventures. Unfortunately our finnish friends were flying home on Saturday early in the morning.
+The week past so quickly, we had so much fun and we can’t wait to visit them next year. Thanks Erasmus+ for this great opportunity!
+			`;
+		}
+		function schoolYear(){
+			let b = document.getElementById("countries").innerHTML;
+			if(b == ""){
+				console.log("Hey")
+				document.getElementById("countries").innerHTML = `<div id="project" class="projectbutton" onclick=" Change()" style="margin-top: 2vh;">
+				<h2 style="margin-left: 9px;" id="projecttitle">Finland</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent">
+		
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent1">
+		
+			</div>
+			<div id="project" class="projectbutton" onclick="largespain()" style="">
+				<h2 style="margin-left: 9px;" id="projecttitle">Spain</h2>
+				
+			</div>
+			<div style="margin-left: 20px; width: 80vw; margin-bottom: 2vh;" id="projectcontent2">
+		
+			</div>
+			`
+			document.getElementById("projectcontent").innerHTML = "";
+		    document.getElementById("projectcontent1").innerHTML = "";
+			document.getElementById("projectcontent2").innerHTML = "";
+
+			
+			}
+			else{
+				document.getElementById("countries").innerHTML = "";
+			}
+		}
+
+
+
+		function largespain(){
+			let a = document.getElementById("projectcontent2").innerHTML;
+			if(a == ""){
+				document.getElementById("projectcontent2").innerHTML = `
+				<h1>Project:"International schoolgarden"</h1>
+				<br>
+					  <div class="gallery">
+    				<img src="image0.jpeg" alt="Zdjęcie 1">
+					<img src="image1.jpeg" alt="Zdjęcie 2">
+					<img src="image2.jpeg" alt="Zdjęcie 3">
+					<img src="image3.jpeg" alt="Zdjęcie 4">
+					<img src="image4.jpeg" alt="Zdjęcie 5">
+					<img src="image6.jpeg" alt="Zdjęcie 6">
+					<img src="image7.jpeg" alt="Zdjęcie 7">
+					<img src="image8.jpeg" alt="Zdjęcie 8">
+					<img src="image9.jpeg" alt="Zdjęcie 9">
+					<img src="image10.jpeg" alt="Zdjęcie 10">
+					<img src="image11.jpeg" alt="Zdjęcie 11">
+					<img src="image12.jpeg" alt="Zdjęcie 12">
+					<img src="image13.jpeg" alt="Zdjęcie 13">
+					<img src="image14.jpeg" alt="Zdjęcie 14">
+     				</div>
+	 			<div class="finntext">
+     					<strong>Tuesday:</strong> We arrived in Potsdam and visited the "Volkspark" to enjoy the beautiful nature and spend some
+time together. It was a wonderful way to start our week, surrounded by lush greenery.
+<br>
+<strong>Wednesday:</strong> We continued exploring Potsdam, taking in some of the city's remarkable landmarks and
+appreciating the natural beauty scattered throughout the urban landscape.
+<br>
+<strong>Thursday:</strong> At school, we engaged in a gardening project, planting beets. Before getting our hands dirty, we
+developed a detailed plan to ensure the success of our planting efforts.
+<br>
+<strong>Friday:</strong> We prepared a small presentation based on our gardening project, sharing insights and experiences
+with our peers.
+<br>
+<strong>Weekend:</strong> Our group spent the weekend actively exploring various locations, including the Groß Glinicker
+See, which boasts two stunning islands. It was a fantastic opportunity to bond and enjoy the scenic
+surroundings.
+<br>
+<strong>Monday:</strong> The Spanish guests traveled to Berlin, where they also explored the natural attractions the city has
+to offer, broadening their experience of Germany's diverse landscapes.
+<br>
+<strong>Tuesday:</strong> On the final day, our Spanish friends departed, marking the end of a memorable and enriching
+week.
+     				</div>
+				`;
+			}
+			else{
+				document.getElementById("projectcontent2").innerHTML = "";
+			}
+
+		}
+		function Menu(){
+		const menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide menu
+            } else {
+                menu.style.display = "block"; // Show menu
+            }
+		}
+		function changeSize(){
+			const backgrounder = document.querySelector('.backgrounder');
+			backgrounder.style.height = `${window.height}px`;
+			let a = document.getElementById("projectcontent").innerHTML;
+			if(a == ""){
+				Larger()
+			}
+			else{
+				document.getElementById("projectcontent").innerHTML = "";
+			}
+		}
+        function Larger(){
+			document.getElementById("projectcontent").innerHTML = `
+			<h1>Project: Without my smartphone</h1>
+	<h2>We made a survey in our school about the use of smartphones, here you can see our results:</h2>
+	<div class="alldivs">
+	 <h6 class="tekstindiv1">
+	<div class="images">
+	<img class="erasmusimg3" src="whatisyourage.jfif">
+		<img class="erasmusimg3" src="gender.jfif">
+		</div>
+
+		 We asked the responders' age and the most common age was 15. All of the responders were in the age of 12 to 18.
+We also asked their gender. The genders of the students are almost 50-50, there might be a mistake in the system, because all the students didn't respond. But there was little more boys.
+		  </h6>
+		  
+	
+	 
+	</div>
+	
+
+	<br>
+	<br>
+	<h2 class="survey">Surveys</h2>
+	<h2>What's the best age for getting a phone?</h2>
+	<div class="specialdivs">
+		<img class="erasmusimg" src="agetogetsmartphone.jfif">
+		<br>
+	     <h6 class="tekstindivs">
+	        Most people think that the best age to get a smartphone is form 10 to 13 years. The minimum of age is 6 years and the maximum of age is 18 years.
+
+	</h6>
+	
+	
+	</div>
+	<h2>How do you feel without your smartphone?</h2>
+	<div class="specialdivs">
+	     <h6 class="tekstindiv44">
+	       Here you can see the answers for the question: "How do you feel without your phone?".
+	    </h6>
+	    <br>
+	     <img class="erasmusimg1" src="feelwithoutphone.jfif">
+		 <div style="height:100px"></div>
+	</div>
+	<h2>How many hours do you spend on your phone?</h2>
+	<div class="alldivs">
+	     <h6 class="tekstindiv1">
+		 <div class="images">
+		 <img class="erasmusimg44" src="howmanyhoursdo.jfif">
+	     <img class="erasmusimg44" src="phoneaddition.jfif">
+		 
+		 </div>
+		 <br>
+	        
+		 </h6>
+	
+	</div>
+	<h2>Where do you put your phone at night?</h2>
+	<div class="alldivs">
+	     
+	<img class="erasmusimg2" src="whereputyourphone.jfif">
+	</div> 
+	<br>
+	<br>
+	<h2>Here are some inpressions about the week we spent together:</h2>
+	<h6 class="tekstindiv2">
+	<br>
+
+	<div class="table">
+		<div class="germantable">
+			German student
+<br>
+<br>
+First, we played a game of bingo to get to know each other.
+
+What is bingo actually?
+
+For us, bingo is an exchange of information, something we play in class after a vacatcion to find out what the others have been up to. Afterwards we did a tour of the school. Quite normal for us, right? But the Finns seemed very enthusiastic and interested. After the tour we had an introduction to our project. The different interests became clear there. We were divided into two groups. The first group dealt with the design of the website, the other group dealt with the content of the website. At the end of the school day, we cooked potato salad and meatballs together. Something traditionally german.
+
+We are looking forward to a great day together.
+Today at school we invited an expert for journalism: Petra. For the first period we discussed about what to fill out website with and how to make it interesting. Do you know how to write a catchy blog entry? We do now! It should start with an appealing beginning. Throughout the blog it should be like a conversation, a little interaction with the reader. Later we came up with 6 questions about phone using for our survey and split up into groups for tomorrow. How many hours do you spent on your phone everyday?
+In the last period we went in an actionbound tour through Potsdam prepared by Milena and Linnea. After 6km and two hours we have seen about 6 of the most famous sights like the Pfingstberg, neuer Garten, Marmor Palace or the holländisches Viertel and ended the tour there. There are so many things to see in Potsdam!!
+Today is Wednesday, 25 September. Today we conducted a survey about mobile phone use throughout the school. 
+Why are we doing this? 
+We want to know how much time we spend on our mobile phones and for what. We also asked the students  these questions. Then we analysed the results of the survey and drew a conclusion. Because let's be honest, we all use our mobile phones very often. But is that necessary? We should ask ourselves that.
+After lunch, we developed our own Erasmus logos together and then printed or painted them on shirts using the screen printing technique. 
+Do you know what screen printing is?  
+Screen printing is a printing technique in which colour is transferred through a screen onto a T-shirt, for example. You need a stencil for this,…
+
+		</div>
+        
+		<div class="finishtable">
+			Finnish student
+<br>
+<br>
+It's Day 1 of our exchange in Potsdam. After an eventful day at school full of new people we separated into smaller groups and went to explore the city
+During our walk in the park we saw huge beautiful trees that were nothing like in Kalajoki. The surroundings reminded us of all the fantasy books we've read: ancient ruins, enormous trees, a big palace with an impressive fountain. The most fun we had was when racing down a hill laughing smiling and almost falling. The atmosphere was light, bright and free. 
+Continuing our walk into the center we saw beautiful buildings, that reminded us about France and Italy.  There were plenty of little shops that we visited and purchased some souvenirs. The town is wonderful even though it is so much different from Kalajoki and what we are used to.
+After a beautiful excursion in the city, we went to have some refreshing ice cream in the city centre. It is always nice to walk in a city that big and charming. Our journey continued into a cosy welcoming place: to my host's house, where our friends and us had dinner. Even though it was only the second day, we already felt comfortable and open next to our new friends. We spent the rest of the evening singing, dancing, smiling and laughing together, leaving through something that now has become one of my favourite memories from the trip. "Umbrella" by Rihanna is still playing in my head and all these happy and warm pictures of our evening pop up at the same time.
+Wednesday, 25th
+In the afternoon will happen something special! We'll screenprint something on the t-shirts! We've no idea how we'll do it, because most of us have never done that before. It's brilliant idea that we'll create a design ourselves and we'll get t-shirts as a souvenir from Germany! We get to know each other much better with common activities. 
+The thing that we started to plan on paper is was an Erasmus logo! I've always wanted to try to draw on t-shirt, but that's was even more smaizing experience! Firstlty our teacher told us about types of logos. We got to know how many options we actually had! We could draw the things that reminder us of Germany or our own experience in general.
+We had an brainstorm in our head while we're thinking…
+<br>
+<br>
+		</div>
+	</div>
+
+<br>
+<br>
+Conclusion of the survey
+
+<br>
+<br>
+Most teenagers these days agree that phones and technological devices shouldn't be handed easily to kids as they are still in a developing phase of their life and the time spent on the phones for most of them causes an addiction. Teenagers expressed that the absence of technologic devices bring them happiness, and they feel relaxed more than feeling anxious or stressed. That shows us that on a daily basis, phones and technological devices can tire us out. Among teens, phones are used mostly for communication and the usage of social media.
+	</h6>
+	</div>
+
+
+	
+
+
+
+			`;
+		}
+
+
+		function Change(){
+			
+			let a = document.getElementById("projectcontent1").innerHTML;
+			if(a == ""){
+				ChangeHTML()
+				changeSize();
+			}
+			else{
+				document.getElementById("projectcontent").innerHTML = "";
+				document.getElementById("projectcontent1").innerHTML = "";
+			}
+		}
+
+		function ChangeHTML(){
+		document.getElementById("projectcontent1").innerHTML = `
+		    <h1>Project:Our future school</h1>
+			<img src="eras.jpeg" class="finlandpictures" alt="">
+		<img src="eras1.jpg" class="finlandpictures" alt="">
+		<img src="finland1.jpg" class="finlandpictures1" alt="">
+		<br>
+		<div class="finntext">
+	 <strong>From Northern Lights to Finnish Delights: An Unforgettable Start in Kalajoki</strong>
+<br>
+<br>	
+		
+Sunday felt like a dream. It was our first day with our host families, and we kicked it off by visiting a shopping center with a few other families. We shared laughs over a meal at Helburger, then spent the afternoon playing board games and bonding at a host family's house.
+<br>
+But the highlight? On the way home, the northern lights lit up the sky—a rare sight in Kalajoki, appearing only for the 4th time all winter. The colors danced above us, turning an already amazing day into something truly unforgettable.
+<br>
+On Monday, we stepped into the Finnish school, Lukio, and it was absolutely magical! The teachers welcomed us with so much warmth and guided us through an amazing week. We kicked things off with fun Icebreakers and team games that brought everyone closer. In the evening, a few of us got to bake traditional Finnish desserts. The perfect start to an unforgettable week.
+<br>
+<br>
+
+ <strong>Dienstag mit Nightmares und Eis</strong> 
+<br>
+<br>
+ 
+Am Dienstag startete der Tag mit einem Treffen von Schülern aus Italien, Brasilien, Deutschland, Finnland und anderen Ländern. Nach der Vorstellung unserer Schule haben wir über „Finnish Nightmares" und „Deutsche Albträume" gesprochen. „Finnish Nightmares" Comics zeigen witzige Alltagshorrorszenen, wie Smalltalk mit Fremden oder zu nah stehende Menschen. Dazu haben wir eigene Comics zu „Deutschen Albträumen" gestaltet und diese den „Finnish Nightmares" gegenübergestellt.
+<br>
+
+ 
+Danach ging's mit den Finnen aufs Eis: Schlittschuhlaufen, Eishockey spielen und nebenbei noch einen Geburtstag feiern. Zum Abschluss des Schultages besuchten wir ein Museum über eine alte finnische Familie - angeblich spukt es da immer noch! Den Rest des Tages verbrachten die Schüler mit Spielen, Sport und Shoppen.
+<br>
+<br>
+ 
+ 
+ 
+ 
+
+<strong>Mittwoch: Der Schnee verwandelt Finnland in ein Wintermärchen</strong>
+<br>
+<br>
+ 
+Der Mittwoch brachte Abwechslung und Spaß: Nach der Arbeit an unseren Projekten in der Schule spielten wir ein ungewöhnliches Gemeinschaftsspiel, bei dem wir Türme aus Spaghetti und Klebeband bauen mussten. Es war überraschend unterhaltsam und stärkte unseren Teamgeist.
+<br>
+Am Nachmittag ging nahmen wir an einer Winter Olympia teil , wo wir in Zweierteams spielerisch gegeneinander antraten. Diese Herausforderungen brachten uns noch näher mit unseren finnischen Austauschpartner*innen zusammen.
+<br>
+ 
+ 
+Den Abend verbrachte jeder individuell obsleepover, beim Bowling, in der Sauna oder bei Outdoor-Aktivitäten. Der frisch gefallene Schnee verwandelte Finnland in das was wir uns unter Finnland vorgestellthaben: verschneit, stimmungsvoll und voller Erlebnisse, die noch lang in Erinnerung bleiben werden.  
+<br>
+<br>
+ 
+
+<strong>Donnerstag:</strong>
+<br>
+<br>
+ 
+ 
+Zuerst haben wir weiter an unserem Erasmusprojekt gearbeitet. Danach durften wir im Unterricht unserer finnischen Gastschüler teilnehmen.
+<br>
+(Wir konnten viele Ähnlichkeiten zu unserem deutschen Schulsystem erkennen. Zudem war der Unterricht mit viel mehr technischen Geräten gestützt, was uns sehr begeistert hat) 
+<br>
+ 
+ 
+Am Nachmittag sind wir alle zu einem Youth-House gegangen. Dort haben wir zusammen Billiard, Tischtennis und Karten gespielt, Kekse gegessen, Musik gehört und einen schönen Nachmittag zusammen verbracht :)
+<br>
+<br>
+ 
+ 
+ 
+
+<strong>Our last day in finland: </strong>
+<br>
+<br>
+ 
+After the sauna, we went home and had something to eat. Later in the afternoon we went to the coast of Kalajoki. There we went for a walk in the snow. It was really nice to walk through the snow that crunches under your feet. What a nice sound. In the evening we had to pack our bags because we were going back to Potsdam tomorrow. 
+ 
+<br>
+ 
+It was a wonderful time in Finland with lots of new impressions and new memories. It was a great chance to get to know new people and make new friends. All in all, Erasmus + is a great experience and we would recommend to others.  
+<br>
+ 
+ 
+Thank you Erasmus+ for this wonderful time!
+
+
+		"
+		</div>
+		`
+
+		
+		}
+	</script>
+	</div>
+<center>
+	<footer class="footer">
+		<div class="footere">
+		  <a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue;">Impressum</a>
+		  <a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
+		  
+		</div>
+	  </footer>
+</center>
+
+
+
+
+
+
+
+</body></html>
