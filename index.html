@@ -1,68 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="whatiserasmuscss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erasmus+ Project</title>
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<styl href="whatiserasmuscss.css" rel="stylesheet"></style>
 </head>
 <body>
-	<div>
-		<div class="menudivs">
-		<h1 class="logotekst1">Erasmus+</h1>
-		<img class="logoimag1" src="logo.png">
-		<div class="space1"></div>
-		<button id="menubutn1" onclick="Menu()">Menu</button>
-	</div>
-	<center>
-		<div class="menu1" id="menu">
-			<center>
-			   <a href="index.html" class="source1">Home</a>
-		   <br>
-		   <br>
-		   <a href="projects.html" class="source1">Our projects</a>
-		   <br>
-		   <br>
-		   <a href="partnerschools.html" class="source1">Partner schools</a>
-		   <br>
-		   <br>
-		   <a href="application.html" class="source1">Application</a> 
-			</center>
-		   
-	   </div>
-	</center>
-	<h1>What is Erasmus+?</h1>
-	<div class="alldivs">
-	    <div class="tekstdiv">
-	<h6 class="tekstindiv">
-	   Erasmus+ is a European Union (EU) program that has been supporting education, training, youth, and sport across Europe since 2014. It offers opportunities for students to study or do internships abroad, while teachers, trainers, and other staff can take part in teaching and training activities. Young people can also join international exchanges, volunteering projects, and cooperation initiatives focused on youth. In addition, Erasmus+ promotes the development of sport by supporting projects that encourage physical activity and address challenges such as inclusion, diversity, and equal opportunities. What our school offers: group mobility / student exchange (with our partner schools in Spain, Norway, and Finland), student mobility from 1 to 12 months, teacher training.
-	</h6>
-		
-	</div>
-	<img class="erasmusimg" src="erasmus.png">
 
-	</div>
-		<h6>Bild: https://www.consilium.europa.eu/media/54319/erasmus.png</h6>
-	<script>
-		function Menu(){
-		const menu = document.getElementById("menu");
-			if (menu.style.display === "block") {
-                menu.style.display = "none"; // Hide menu
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo-text">Erasmus+</h1>
+            <!-- Restored logo.png as requested. -->
+            <img src="logo.png" alt="School Logo" class="logo-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg'">
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">Menu</button>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="partnerschools.html">Partner Schools</a>
+        <a href="application.html">Application</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2 class="page-title">What is Erasmus+?</h2>
+        
+        <div class="content-grid">
+            <!-- Text Column -->
+            <div class="text-block">
+                <p>
+                    Erasmus+ is a European Union (EU) program that has been supporting education, training, youth, and sport across Europe since 2014. It offers opportunities for students to study or do internships abroad, while teachers, trainers, and other staff can take part in teaching and training activities. 
+                    <br><br>
+                    Young people can also join international exchanges, volunteering projects, and cooperation initiatives focused on youth. In addition, Erasmus+ promotes the development of sport by supporting projects that encourage physical activity and address challenges such as inclusion, diversity, and equal opportunities.
+                    <br><br>
+                    <strong>What our school offers:</strong> group mobility / student exchange (with our partner schools in Spain, Norway, and Finland), student mobility from 1 to 12 months, teacher training.
+                </p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-block">
+                <!-- Using a placeholder image for demo, replace src with 'erasmus.png' -->
+                <img src="https://www.consilium.europa.eu/media/54319/erasmus.png" alt="Erasmus Students Group" onerror="this.src='https://placehold.co/600x400?text=Erasmus+Image'">
+                <div class="image-caption">Source: consilium.europa.eu</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.davinci-gesamtschule.de/impressum/index.php" target="_blank">Impressum</a>
+            <a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" target="_blank">Datenschutz</a>
+            <a href="https://davinci-netzwerk.de/finnland/indexes.html" target="_blank">ESPAÑOL</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("nav-menu");
+            const btn = document.querySelector(".menu-btn");
+            
+            menu.classList.toggle("active");
+            
+            // Optional: Change button text
+            if (menu.classList.contains("active")) {
+                btn.textContent = "Close";
             } else {
-                menu.style.display = "block"; // Show menu
+                btn.textContent = "Menu";
             }
-		}
-	</script>
-
-<center>
-	
-</center>
-<footer class="footer">
-	<div class="footere">
-		<a href="https://www.davinci-gesamtschule.de/impressum/index.php" style="text-decoration: none; color: aliceblue; ">Impressum</a>
-	<a href="https://www.davinci-gesamtschule.de/datenschutz/index.php" style="text-decoration: none; color: aliceblue; margin-left: 10px;">Datenschutz</a>
-		<a href="https://davinci-netzwerk.de/finnland/indexes.html" style="text-decoration: none; color: aliceblue; margin-left: 10px;">ESPANOL</a>
-	</div>
-	
-  </footer>
+        }
+    </script>
 </body>
 </html>
-
-
