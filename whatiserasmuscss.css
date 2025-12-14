@@ -226,9 +226,7 @@
                 grid-template-columns: 1fr 1fr; /* Two columns */
             }
 
-            .logo-text {
-                font-size: 2rem;
-            }
+            .logo-text { font-size: 1.5rem; font-weight: 700; }
             
             /* On large screens, maybe we want menu visible? 
                For this demo, keeping the user's "Menu Button" concept 
