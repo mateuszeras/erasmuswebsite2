@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,7 +111,6 @@
         }
 
         .school-logo-hero {
-  
             height: auto;
             margin-bottom: 40px;
         }
@@ -214,6 +213,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             flex: 1;
+            margin-bottom: 20px;
         }
         .diary-entry h3 { border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; }
 
@@ -264,12 +264,12 @@
         <a href="partnerschools.html">Partner Schools</a>
         <a href="application.html">Application</a>
     </nav>
-         <!-- School Logo / Hero -->
-        <img src="davincischool.png" alt="Da Vinci School" class="school-logo-hero" onerror="this.style.display='none'">
+    
+    <!-- School Logo / Hero -->
+    <img src="davincischool.png" alt="Da Vinci School" class="school-logo-hero" onerror="this.style.display='none'">
+    
     <!-- Main -->
     <main>
-       
-
         <!-- Year 2024-2025 -->
         <div class="project-button" onclick="schoolYear()">
             <h2>School year 2024-2025</h2>
@@ -310,7 +310,7 @@
                 
                 <div id="projectcontent11" class="content-container"></div>
                 
-                <div class="project-button" onclick="largespain()">
+                <div class="project-button" onclick="Spain2526()">
                     <h2>Spain</h2>
                 </div>
                 <div id="projectcontent21" class="content-container"></div>`;
@@ -349,6 +349,41 @@
                     The week past so quickly, we had so much fun and we can’t wait to visit them next year. Thanks Erasmus+ for this great opportunity!
                 </p>
             </div>`;
+        }
+
+        function Spain2526() {
+            let a = document.getElementById("projectcontent21").innerHTML;
+            if(a == "") {
+                document.getElementById("projectcontent21").innerHTML = `
+                <div class="diary-entry">
+                    <h1>Kunst verbindet uns – Erasmus-Austausch zwischen Deutschland und Spanien</h1>
+                    <h2>Photo Gallery</h2>
+                    <div class="gallery-grid">
+                        <img src="Kunst verbindet – Erasmus-Austausch zwischen Deutschland und Spanien_6.jpg" alt="Art Project Image 1" onerror="this.src='https://placehold.co/150x150?text=Art+Project+1'">
+                        <img src="Kunst verbindet – Erasmus-Austausch zwischen Deutschland und Spanien_7.jpg" alt="Art Project Image 2" onerror="this.src='https://placehold.co/150x150?text=Art+Project+2'">
+                        <img src="Kunst verbindet – Erasmus-Austausch zwischen Deutschland und Spanien_10.jpg" alt="Art Project Image 3" onerror="this.src='https://placehold.co/150x150?text=Art+Project+3'">
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            Im Rahmen unseres Erasmus-Austauschs hatten deutsche und spanische Schülerinnen und Schüler die Möglichkeit, gemeinsam an dem Thema „Kunst verbindet uns“ zu arbeiten. Obwohl wir aus verschiedenen Ländern kommen und unterschiedliche Sprachen sprechen, konnten wir uns durch Englisch verständigen und miteinander austauschen. Dabei haben wir erlebt, wie einfach es sein kann, neue Menschen kennenzulernen und kulturelle Unterschiede als Bereicherung zu sehen.
+                        </p>
+                        <p>
+                            Das Thema unseres Projekts war die Frage, wie Kunst Menschen miteinander verbinden kann. Kunst kennt keine Grenzen und keine Sprachbarrieren. Sie schafft Begegnungen, fördert Kreativität und bringt Menschen zusammen. Genau diese Erfahrung konnten wir während unseres Austauschs machen. Um dieses Thema praktisch umzusetzen, beschäftigten wir uns mit Street Art und Graffiti. Gemeinsam entwickelten wir Ideen, tauschten unsere Gedanken aus und arbeiteten als Team an verschiedenen kreativen Projekten.
+                        </p>
+                        <p>
+                            Besonders beeindruckend war unser gemeinsames Kunstwerk zum Thema Frieden. Jede/jeder gestaltete eine eigene Leinwand mit Graffiti-Elementen. Erst durch das Zusammensetzen aller einzelnen Leinwände entstand das vollständige Wort „PEACE“. Dieses Kunstwerk symbolisiert nicht nur Frieden, sondern auch den Zusammenhalt und die Zusammenarbeit aller. Jede Leinwand war einzigartig, doch erst gemeinsam ergaben sie ein großes Ganzes, genau wie unsere Gruppe.
+                        </p>
+                        <p>
+                            Während des Projekts wurde deutlich, wie wichtig Respekt, Offenheit und Teamarbeit sind. Durch den Austausch miteinander konnten wir neue Perspektiven kennenlernen und voneinander lernen. Kunst wurde dabei zu einer gemeinsamen Sprache, die uns trotz unterschiedlicher Herkunft miteinander verbunden hat.
+                        </p>
+                        <p>
+                            Der Erasmus-Austausch hat uns gezeigt, dass Gemeinschaft und Zusammenhalt wichtige Grundlagen für ein erfolgreiches Miteinander sind. Das Projekt „Kunst verbindet“ hat nicht nur unsere Kreativität gefördert, sondern auch verdeutlicht, wie wertvoll kultureller Austausch und Freundschaften für uns sind.
+                        </p>
+                    </div>
+                </div>`;
+            } else {
+                document.getElementById("projectcontent21").innerHTML = "";
+            }
         }
 
 
@@ -503,7 +538,7 @@
                         <p class="text-content">
                             It's Day 1 of our exchange in Potsdam. After an eventful day at school full of new people we separated into smaller groups and went to explore the city
                             During our walk in the park we saw huge beautiful trees that were nothing like in Kalajoki. The surroundings reminded us of all the fantasy books we've read: ancient ruins, enormous trees, a big palace with an impressive fountain. The most fun we had was when racing down a hill laughing smiling and almost falling. The atmosphere was light, bright and free.
-                            Continuing our walk into the center we saw beautiful buildings, that reminded us about France and Italy.  There were plenty of little shops that we visited and purchased some souvenirs. The town is wonderful even though it is so much different from Kalajoki and what we are used to.
+                            Continuing our walk into the center we saw beautiful buildings, that reminded us about France and Italy.  There were plenty of little shops that we visited and purchased some souvenirs. The town is wonderful even though it is so much different from Kalajoki and what we are used to.
                             After a beautiful excursion in the city, we went to have some refreshing ice cream in the city centre. It is always nice to walk in a city that big and charming. Our journey continued into a cosy welcoming place: to my host's house, where our friends and us had dinner. Even though it was only the second day, we already felt comfortable and open next to our new friends. We spent the rest of the evening singing, dancing, smiling and laughing together, leaving through something that now has become one of my favourite memories from the trip. "Umbrella" by Rihanna is still playing in my head and all these happy and warm pictures of our evening pop up at the same time.
                             Wednesday, 25th
                             In the afternoon will happen something special! We'll screenprint something on the t-shirts! We've no idea how we'll do it, because most of us have never done that before. It's brilliant idea that we'll create a design ourselves and we'll get t-shirts as a souvenir from Germany! We get to know each other much better with common activities.
@@ -582,6 +617,3 @@
     </script>
 </body>
 </html>
-
-
-
